@@ -21,11 +21,12 @@ export const InnerWrapper = styled.div`
 
 export const OuterWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #9fafd3;
+  width: 100%;
+  height: 100%;
+  // background-color: #9fafd3;
 `;
 
 export const Headline = styled.h1`

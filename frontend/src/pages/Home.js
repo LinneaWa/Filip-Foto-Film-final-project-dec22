@@ -2,9 +2,14 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
+import { HeroHeader } from 'components/HeroHeader';
+import { Navbar } from 'components/Navbar';
 
 export const Home = () => {
   return (
+    <>
+    <Navbar />
+    <HeroHeader/>
     <OuterWrapper>
     <InnerWrapper>
         <Headline><span>Filip Foto Film</span></Headline>
@@ -38,6 +43,7 @@ export const Home = () => {
         </ButtonLink>
     </InnerWrapper>
     </OuterWrapper>
+    </>
   );
 }
 
