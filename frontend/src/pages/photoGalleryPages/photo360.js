@@ -1,20 +1,18 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
+import { OuterWrapper, InnerWrapper, Buttons, Headline } from 'GlobalStyles';
 import { Link } from 'react-router-dom'
-import { PhotoGalleryCard } from 'components/PhotoGalleryCard';
 
-export const Photo = () => {
+export const Photo360 = () => {
   return (
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film - Photography</span></Headline>
+        <Headline><span>Contact Filip Foto Film</span></Headline>
+
         <p>Homepage</p>
         <ButtonLink to="/">
             <Buttons type="button">Back Home</Buttons>
         </ButtonLink>
-        <p>Galleries</p>
-        <PhotoGalleryCard />
     </InnerWrapper>
     </OuterWrapper>
   );

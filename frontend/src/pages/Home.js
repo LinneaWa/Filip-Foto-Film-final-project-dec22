@@ -12,35 +12,16 @@ export const Home = () => {
     <HeroHeader/>
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film</span></Headline>
-        <p>Filips Photography</p>
-        <ButtonLink to="/Photo">
-            <Buttons type="button">Photo</Buttons>
-        </ButtonLink>
-        <p>Filip Videoproducer</p>
-        <ButtonLink to="/Video">
-            <Buttons type="button">Video</Buttons>
-        </ButtonLink>
-        <p>Filips studio</p>
-        <ButtonLink to="/Studio">
-            <Buttons type="button">Studio</Buttons>
-        </ButtonLink>        
-        <p>About Filip</p>
-        <ButtonLink to="/About">
-            <Buttons type="button">About</Buttons>
-        </ButtonLink>        
-        <p>Hire Filip - the process</p>
-        <ButtonLink to="HowTo">
-            <Buttons type="button">HowTo</Buttons>
-        </ButtonLink>        
-        <p>Filip contact</p>
-        <ButtonLink to="/Contact">
-            <Buttons type="button">Contact</Buttons>
-        </ButtonLink>
-        <p>Homepage</p>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <ButtonLink to="/About"><Buttons type="button">About</Buttons></ButtonLink> 
+        <Galleries>
+        <ButtonLink to="/Photo"><Buttons type="button">Photo</Buttons></ButtonLink>
+        <ButtonLink to="/Video"><Buttons type="button">Video</Buttons></ButtonLink>
+        </Galleries>
+        <ButtonLink to="/Studio"><Buttons type="button">Studio</Buttons></ButtonLink>        
+        <ButtonLink to="/HowTo"><Buttons type="button">HowTo</Buttons></ButtonLink>        
+        <ButtonLink to="/Contact"><Buttons type="button">Contact</Buttons></ButtonLink>
+        <ButtonLink to="/"><Buttons type="button">Back Home</Buttons></ButtonLink>
+
     </InnerWrapper>
     </OuterWrapper>
     </>
@@ -50,3 +31,8 @@ export const Home = () => {
 const ButtonLink = styled(Link)`
 width: 100%;
 `;
+
+const Galleries = styled.div`
+display: flex;
+flex-direction: row;
+`

@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Företagsfoto",
+      "title-text": "Företagsfoto",
+      "text": "Beskrivning",
+      "link": "/Photo/foretag",
+      "image": "/assets/foto/thumbnails/foretag.jpeg"
+    },
+    {
+      "title": "Modellfoto",
+      "title-text": "Modellfoto",
+      "text": "Beskrivning",
+      "link": "/Photo/modell",
+      "image": "/assets/foto/thumbnails/modell-2.jpeg"
+    },
+    {
+      "title": "Bröllopsfoto",
+      "title-text": "Bröllopsfoto",
+      "text": "Beskrivning",
+      "link": "/Photo/brollop",
+      "image": "/assets/foto/thumbnails/brollop.jpeg"
+    },
+    {
+      "title": "Familjefoto",
+      "title-text": "Familjefoto",
+      "text": "Beskrivning",
+      "link": "/Photo/familj",
+      "image": "/assets/foto/thumbnails/familj.jpeg"
+    },
+    {
+        "title": "Drönarfoto",
+        "title-text": "Drönarfoto",
+        "text": "Beskrivning",
+        "link": "/Photo/dronare",
+        "image": "/assets/foto/thumbnails/dronare.jpeg"
+    },
+      {
+        "title": "360°-foto",
+        "title-text": "360°-foto",
+        "text": "Beskrivning",
+        "link": "/Photo/360",
+        "image": "/assets/foto/thumbnails/360.jpeg"
+      }
+  ]

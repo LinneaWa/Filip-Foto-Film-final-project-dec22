@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Flisby",
+      "title-text": "Flisby",
+      "text": "Beskrivning",
+      "link": "/Photo/foretag",
+      "image": "/assets/foto/foretag/Flisby.jpg"
+    },
+    {
+      "title": "Sanna",
+      "title-text": "Sanna",
+      "text": "Beskrivning",
+      "link": "/Photo/modell",
+      "image": "/assets/foto/foretag/Sanna.jpg"
+    },
+    {
+      "title": "Smaland",
+      "title-text": "Smaland",
+      "text": "Beskrivning",
+      "link": "/Photo/brollop",
+      "image": "/assets/foto/foretag/Smaland.jpg"
+    },
+    {
+      "title": "Raski",
+      "title-text": "Raski",
+      "text": "Beskrivning",
+      "link": "/Photo/familj",
+      "image": "/assets/foto/foretag/Raski.jpg"
+    }
+  ]

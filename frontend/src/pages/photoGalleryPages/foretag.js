@@ -1,20 +1,21 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
+import { OuterWrapper, InnerWrapper, Buttons, Headline } from 'GlobalStyles';
 import { Link } from 'react-router-dom'
-import { PhotoGalleryCard } from 'components/PhotoGalleryCard';
+import { ForetagPhotoGallery } from 'components/ForetagPhotoGallery';
+import { ForetagFeatured } from 'components/ForetagFeatured';
 
-export const Photo = () => {
+export const Foretag = () => {
   return (
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film - Photography</span></Headline>
+        <Headline><span>Företag</span></Headline>
+        <ForetagFeatured />
+        <ForetagPhotoGallery />
         <p>Homepage</p>
         <ButtonLink to="/">
             <Buttons type="button">Back Home</Buttons>
         </ButtonLink>
-        <p>Galleries</p>
-        <PhotoGalleryCard />
     </InnerWrapper>
     </OuterWrapper>
   );
