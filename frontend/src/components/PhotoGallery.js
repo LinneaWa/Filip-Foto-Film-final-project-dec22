@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import foretagGalleryData from '../data/PhotoGalleryData/foretagGalleryData.json'
 
-export const ForetagPhotoGallery = () => {
+export const PhotoGallery = () => {
   return (
     <>
         <SectionHeader>Företagsfoto</SectionHeader>

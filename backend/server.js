@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import listEndpoints from "express-list-endpoints";
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/project-FilipFotoFilm";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -18,8 +19,21 @@ app.use(express.json());
 
 // Start defining your routes here
 app.get("/", (req, res) => {
-  res.send("Hello Filip!");
+  res.status(200).json({
+    Message: "Hello Filip!",
+    data: listEndpoints(app)
+  })
 });
+
+const ForetagPhotoFeaturedData = mongoose.model('ForetagPhotoFeaturedData', {
+  titleText: String,
+  text: String,
+  image: String
+})
+app.get('/foretagPhotoFeaturedData', async (req, res) => {
+  const foretagPhotoFeaturedData = await ForetagPhotoFeaturedData.find()
+  res.json(foretagPhotoFeaturedData)
+})
 
 // Start the server
 app.listen(port, () => {

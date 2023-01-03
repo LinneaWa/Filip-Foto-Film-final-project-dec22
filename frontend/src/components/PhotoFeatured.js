@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import foretagFeaturedData from '../data/PhotoFeaturedData/foretagFeaturedData.json'
 
-export const ForetagFeatured = () => {
+export const PhotoFeatured = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -16,7 +16,7 @@ export const ForetagFeatured = () => {
                 href={foretagFeaturedData.link}>
                 <ThumbnailWrapper url={foretagFeaturedData.image}>
                   <InfoWrapper>
-                <InfoHeader>{foretagFeaturedData['title-text']}</InfoHeader>
+                <InfoHeader>{foretagFeaturedData['titleText']}</InfoHeader>
                 <Info>{foretagFeaturedData['text']}</Info>
                 </InfoWrapper>
                 </ThumbnailWrapper>
