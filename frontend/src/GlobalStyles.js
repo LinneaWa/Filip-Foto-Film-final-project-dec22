@@ -15,7 +15,7 @@ export const InnerWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   text-align: center;
 `;
 

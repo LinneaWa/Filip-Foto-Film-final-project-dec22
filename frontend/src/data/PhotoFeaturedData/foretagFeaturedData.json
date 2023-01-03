@@ -1,30 +1,16 @@
 [
     {
-      "title": "Flisby",
-      "title-text": "Flisby",
-      "text": "Beskrivning",
-      "link": "/Photo/foretag",
-      "image": "/assets/foto/foretag/Flisby.jpg"
-    },
-    {
       "title": "Sanna",
       "title-text": "Sanna",
-      "text": "Beskrivning",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "link": "/Photo/modell",
       "image": "/assets/foto/foretag/Sanna.jpg"
     },
     {
       "title": "Smaland",
       "title-text": "Smaland",
-      "text": "Beskrivning",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "link": "/Photo/brollop",
       "image": "/assets/foto/foretag/Smaland.jpg"
-    },
-    {
-      "title": "Raski",
-      "title-text": "Raski",
-      "text": "Beskrivning",
-      "link": "/Photo/familj",
-      "image": "/assets/foto/foretag/Raski.jpg"
     }
   ]

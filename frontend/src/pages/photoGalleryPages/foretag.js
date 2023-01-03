@@ -4,20 +4,21 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from 'GlobalStyles';
 import { Link } from 'react-router-dom'
 import { ForetagPhotoGallery } from 'components/ForetagPhotoGallery';
 import { ForetagFeatured } from 'components/ForetagFeatured';
+import { TEST2lightbox } from 'components/TEST2lightbox';
+import { Navbar } from 'components/Navbar';
 
 export const Foretag = () => {
   return (
-    <OuterWrapper>
+    <>
+    <Navbar />
     <InnerWrapper>
         <Headline><span>Företag</span></Headline>
+        {/*<ForetagPhotoGallery /> */}
         <ForetagFeatured />
-        <ForetagPhotoGallery />
-        <p>Homepage</p>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <TEST2lightbox />
+        <ButtonLink to="/"><Buttons type="button">Back Home</Buttons></ButtonLink>
     </InnerWrapper>
-    </OuterWrapper>
+    </>
   );
 }
 
