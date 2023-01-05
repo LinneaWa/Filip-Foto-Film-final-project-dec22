@@ -43,7 +43,6 @@ app.get('/photos', async (req, res) => {
 app.get('/photos/tag/:tag', async (req, res) => {
   try{
   const photosByTag = await Photo.find({ tag: req.params.tag });
-  console.log(photosByTag)
     if (photosByTag) {
       res.status(200).json({
         success: true,
@@ -81,7 +80,6 @@ app.get('/videos', async (req, res) => {
 app.get('/videos/tag/:tag', async (req, res) => {
   try{
     const videosByTag = await Video.find({ tag: req.params.tag });
-    console.log(videosByTag)
       if (videosByTag) {
         res.status(200).json({
           success: true,
