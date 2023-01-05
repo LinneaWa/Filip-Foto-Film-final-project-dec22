@@ -17,7 +17,7 @@ export const PhotoGalleryCard = () => {
                   <ThumbnailTitle>{photoGalleryCard.title.toUpperCase()}</ThumbnailTitle>
                 </ThumbnailWrapper>
                 <ProjectInfoHeader>
-                  {photoGalleryCard['title-text']}
+                  {photoGalleryCard['title']}
                 </ProjectInfoHeader>
                 <ProjectInfo>{photoGalleryCard['text']}</ProjectInfo>
               </ProjectCard>

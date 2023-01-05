@@ -16,7 +16,7 @@ export const PhotoFeatured = () => {
                 href={foretagFeaturedData.link}>
                 <ThumbnailWrapper url={foretagFeaturedData.image}>
                   <InfoWrapper>
-                <InfoHeader>{foretagFeaturedData['titleText']}</InfoHeader>
+                <InfoHeader>{foretagFeaturedData['title']}</InfoHeader>
                 <Info>{foretagFeaturedData['text']}</Info>
                 </InfoWrapper>
                 </ThumbnailWrapper>

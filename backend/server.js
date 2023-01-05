@@ -25,14 +25,84 @@ app.get("/", (req, res) => {
   })
 });
 
-const ForetagPhotoFeaturedData = mongoose.model('ForetagPhotoFeaturedData', {
-  titleText: String,
+const Photo = mongoose.model('Photo', {
+  title: String,
   text: String,
-  image: String
+  link: String,
+  image: String,
+  tag: String
 })
-app.get('/foretagPhotoFeaturedData', async (req, res) => {
-  const foretagPhotoFeaturedData = await ForetagPhotoFeaturedData.find()
-  res.json(foretagPhotoFeaturedData)
+app.get('/photos', async (req, res) => {
+  const photos = await Photo.find()
+  res.status(200).json({
+    success: true,
+    body: photos
+  });
+})
+
+app.get('/photos/tag/:tag', async (req, res) => {
+  try{
+  const photosByTag = await Photo.find({ tag: req.params.tag });
+  console.log(photosByTag)
+    if (photosByTag) {
+      res.status(200).json({
+        success: true,
+        body: photosByTag
+      });
+    } else {
+      res.status(404).json({
+        success: false,
+        body: {
+          message: "Could not find this photo"
+        }
+      });
+    }
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      body: {
+        message: "Invalid id"
+      }
+    });
+  }
+})
+
+const Video = mongoose.model('Video', {
+  title: String,
+  text: String,
+  link: String,
+  image: String,
+  tag: String
+})
+app.get('/videos', async (req, res) => {
+  const videos = await Video.find()
+  res.json(videos)
+})
+app.get('/videos/tag/:tag', async (req, res) => {
+  try{
+    const videosByTag = await Video.find({ tag: req.params.tag });
+    console.log(videosByTag)
+      if (videosByTag) {
+        res.status(200).json({
+          success: true,
+          body: videosByTag
+        });
+      } else {
+        res.status(404).json({
+          success: false,
+          body: {
+            message: "Could not find this photo"
+          }
+        });
+      }
+    } catch (error) {
+      res.status(400).json({
+        success: false,
+        body: {
+          message: "Invalid id"
+        }
+      });
+    }
 })
 
 // Start the server

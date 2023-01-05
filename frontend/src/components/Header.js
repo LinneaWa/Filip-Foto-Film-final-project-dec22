@@ -2,11 +2,11 @@
 import styled from 'styled-components/macro'
 import React from 'react';
 
-export const HeroHeader = () => {
+export const Header = () => {
   return (
     <HeroContainer>
       <Hero autoPlay muted loop playsinline className="hero-video">
-        <source src="./HEROvideo.mp4" type="video/mp4"/>
+        <source src="https://filippilthammar.se/FilipFotoFilm/Filip-L%C3%A4gg-nya-grejer-h%C3%A4r/HeaderFoto.mp4" type="video/mp4"/>
       </Hero>
       <Headline>
         <h1>Professionell video och bilder till din hemsida, dina sociala medier eller din presentation</h1>
@@ -31,10 +31,12 @@ const Headline = styled.div`
   box-sizing: border-box;
   position: absolute;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   border: 2px solid green;
   width: 100%;
+  padding: 20px;
   height: 100%;
   top: 0;
   left: 0;

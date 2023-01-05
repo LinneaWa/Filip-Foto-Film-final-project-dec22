@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
-import { HeroHeader } from 'components/HeroHeader';
+import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 
 export const Home = () => {
   return (
     <>
     <Navbar />
-    <HeroHeader/>
+    <Header/>
     <OuterWrapper>
     <InnerWrapper>
         <ButtonLink to="/About"><Buttons type="button">About</Buttons></ButtonLink> 

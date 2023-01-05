@@ -1,0 +1,424 @@
+[
+    {
+      "title": "Företagsfoto",
+      "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "link": "/Photo/foretag",
+      "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/foretag.jpeg",
+      "tag": "thumbnailPhoto"
+    },
+    {
+      "title": "Modellfoto",
+      "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "link": "/Photo/modell",
+      "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/modell-2.jpeg",
+      "tag": "thumbnailPhoto"
+    },
+    {
+      "title": "Bröllopsfoto",
+      "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "link": "/Photo/brollop",
+      "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/brollop.jpeg",
+      "tag": "thumbnailPhoto"
+    },
+    {
+        "title": "Familjefoto",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "/Photo/familj",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/familj.jpeg",
+        "tag": "thumbnailPhoto"
+    },
+    {
+        "title": "Drönarfoto",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "/Photo/dronare",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/dronare.jpeg",
+        "tag": "thumbnailPhoto"
+    },
+      {
+        "title": "360°-foto",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "/Photo/360",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/360.jpeg",
+        "tag": "thumbnailPhoto"
+      },
+
+
+
+
+
+
+      {
+        "title": "Sanna",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/foretag/HoldingCamera.jpg",
+        "tag": "featuredForetag"
+      },
+      {
+        "title": "Smaland",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/foretag/Smaland.jpg",
+        "tag": "featuredForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxForetag"
+      },
+
+
+
+
+
+
+
+
+
+
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxBrollop"
+      },
+
+
+
+
+
+
+
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxDronare"
+      },
+
+
+
+
+
+
+
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxFamilj"
+      },
+
+
+
+
+
+
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featuredModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightboxModell"
+      },
+
+
+
+
+
+
+
+
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featured360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "featured360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      },
+      {
+        "title": "Placeholder",
+        "text": "Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": "null",
+        "image": "https://filippilthammar.se/FilipFotoFilm/Images/modell/DSC06391.jpg-nggi….jpg",
+        "tag": "lightbox360"
+      }
+  ]

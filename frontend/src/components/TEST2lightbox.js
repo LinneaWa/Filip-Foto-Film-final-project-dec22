@@ -6,19 +6,19 @@ import Lightroom from 'react-lightbox-gallery';
 
 var images = [
     {
-      src:"https://usercontent.one/wp/www.filippilthammar.se/wp-content/gallery/foretagsbilder/cache/Flisby.jpg-nggid0227-ngg0dyn-530x1000x100-00f0w010c010r110f110r010t010.jpg",
+      src:"https://filippilthammar.se/FilipFotoFilm/Images/Flisby.jpg",
       desc: "Flisby",
     },
     {
-      src:"https://usercontent.one/wp/www.filippilthammar.se/wp-content/gallery/foretagsbilder/cache/Foretag-7.jpg-nggid0220-ngg0dyn-530x1000x100-00f0w010c010r110f110r010t010.jpg",
+      src:"https://filippilthammar.se/FilipFotoFilm/Images/Sanna.jpg",
       desc: "Woman with camera ",
     }, 
     {
-      src:"https://usercontent.one/wp/www.filippilthammar.se/wp-content/gallery/foretagsbilder/cache/Raski.jpg-nggid0225-ngg0dyn-530x1000x100-00f0w010c010r110f110r010t010.jpg",
+      src:"https://filippilthammar.se/FilipFotoFilm/Images/Raski.jpg",
       desc: "porträtt",
     },
     {
-      src:"https://usercontent.one/wp/www.filippilthammar.se/wp-content/gallery/foretagsbilder/cache/Foretag-9.jpg-nggid0222-ngg0dyn-530x1000x100-00f0w010c010r110f110r010t010.jpg",
+      src:"https://filippilthammar.se/FilipFotoFilm/Images/Smaland.jpg",
       desc: "Gruppfoto",
     }
   ];

@@ -10,4 +10,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    color: rgb(208, 215, 208);
+}
+
+something {
+  color: rgb(208, 215, 208);
+  color: rgb(148, 160, 148);
+  color: rgb(48, 48, 48)
 }
