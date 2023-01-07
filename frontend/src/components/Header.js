@@ -1,17 +1,43 @@
 // import { InnerWrapper, OuterWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { VIDEO_URL } from 'utils/utils';
 
-export const Header = () => {
+export const Header = ({ tag }) => {
+
+  const [videos, setVideos] = useState([]);
+  // const [loading, setLoading] = useState(false);
+
+
+  const fetchVideos = () => {
+    // setLoading(true);
+    fetch(`${VIDEO_URL}/tag/${tag}`)
+      .then((res) => res.json())
+      .then((data) => setVideos(data.body))
+      .catch((error) => console.error(error))
+      // .finally(() => setLoading(false));
+  }
+  
+  useEffect(() => {
+    fetchVideos();
+  }, []);
+
+
+
+
   return (
-    <HeroContainer>
-      <Hero autoPlay muted loop playsinline className="hero-video">
-        <source src="https://filippilthammar.se/FilipFotoFilm/Filip-L%C3%A4gg-nya-grejer-h%C3%A4r/HeaderFoto.mp4" type="video/mp4"/>
-      </Hero>
-      <Headline>
-        <h1>Professionell video och bilder till din hemsida, dina sociala medier eller din presentation</h1>
-      </Headline>
-    </HeroContainer>
+    <div>
+      {videos.map((video) => {
+        return (
+          <HeroContainer key={video._id}>
+            <Hero autoPlay muted loop playsinline className="hero-video">
+              <source src={video['video']} type="video/mp4"/>
+            </Hero>
+            <Headline><h1>{video['text']}</h1></Headline>
+          </HeroContainer>
+        );
+      })}
+    </div>
   );
 }
 

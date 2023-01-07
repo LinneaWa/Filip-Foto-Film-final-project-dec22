@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
     <Navbar />
-    <Header/>
+    <Header tag={'headerHome'} />
     <OuterWrapper>
     <InnerWrapper>
         <ButtonLink to="/About"><Buttons type="button">About</Buttons></ButtonLink> 

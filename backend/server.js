@@ -75,7 +75,10 @@ const Video = mongoose.model('Video', {
 })
 app.get('/videos', async (req, res) => {
   const videos = await Video.find()
-  res.json(videos)
+  res.status(200).json({
+    success: true,
+    body: videos
+  });
 })
 app.get('/videos/tag/:tag', async (req, res) => {
   try{

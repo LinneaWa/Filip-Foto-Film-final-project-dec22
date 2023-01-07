@@ -1,25 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components/macro'
+import { PHOTO_URL } from 'utils/utils';
 import { Link } from 'react-router-dom'
-import photoGalleryCard from '../data/photoGalleryCard.json'
 
-export const PhotoGalleryCard = () => {
+// https://filip-foto-film-final-project-dec22-gqk64wdp4q-lz.a.run.app/photos
+
+export const PhotoGalleryCard = ({ tag }) => {
+  const [photos, setPhotos] = useState([]);
+  // const [loading, setLoading] = useState(false);
+
+
+  const fetchPhotos = () => {
+    // setLoading(true);
+    fetch(`${PHOTO_URL}/tag/${tag}`)
+      .then((res) => res.json())
+      .then((data) => setPhotos(data.body))
+      .catch((error) => console.error(error))
+      // .finally(() => setLoading(false));
+  }
+  
+  useEffect(() => {
+    fetchPhotos();
+  }, []);
+
   return (
     <>
         <SectionHeader>Photography</SectionHeader>
         <FeaturedProjectWrapper>
-          {photoGalleryCard.map((photoGalleryCard) => {
+          {photos.map((photo) => {
             return (
               <ProjectCard
-                key={photoGalleryCard.title}
-                href={photoGalleryCard.link}>
-                <ThumbnailWrapper url={photoGalleryCard.image}>
-                  <ThumbnailTitle>{photoGalleryCard.title.toUpperCase()}</ThumbnailTitle>
+                key={photo._id}
+                href={photo.link}>
+                <ThumbnailWrapper url={photo.image}>
+                  <ThumbnailTitle>{photo.title.toUpperCase()}</ThumbnailTitle>
                 </ThumbnailWrapper>
                 <ProjectInfoHeader>
-                  {photoGalleryCard['title']}
+                  {photo['title']}
                 </ProjectInfoHeader>
-                <ProjectInfo>{photoGalleryCard['text']}</ProjectInfo>
+                <ProjectInfo>{photo['text']}</ProjectInfo>
               </ProjectCard>
             );
           })}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { blabla } from  './Reducers/Blabla'
+//import { blabla } from  './Reducers/Blabla'
 import { Home } from './pages/Home'
 import { Video } from './pages/Video'
 import { Photo } from './pages/Photo'
@@ -19,15 +19,15 @@ import { Photo360 } from 'pages/photoGalleryPages/photo360';
 import { NotFound } from './pages/NotFound';
 
 
-const reducer = combineReducers({
-  bla: blabla.reducer,
-})
+// const reducer = combineReducers({
+//   bla: blabla.reducer,
+// })
 
-const store = configureStore({reducer})
+// onst store = configureStore({reducer})
 
 export const App = () => {
   return (
-    <Provider store={store}>
+    <>
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Home />} />
@@ -46,6 +46,8 @@ export const App = () => {
         <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>
-    </Provider>
+    </>
   );
 };
+
+// provider if reducer and store is put back

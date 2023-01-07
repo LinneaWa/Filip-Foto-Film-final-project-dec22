@@ -1,23 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
-import foretagFeaturedData from '../data/PhotoFeaturedData/foretagFeaturedData.json'
+import { PHOTO_URL } from 'utils/utils';
 
-export const PhotoFeatured = () => {
+export const PhotoFeatured = ({ tag }) => {
+  const [photos, setPhotos] = useState([]);
+  // const [loading, setLoading] = useState(false);
+
+
+  const fetchPhotos = () => {
+    // setLoading(true);
+    fetch(`${PHOTO_URL}/tag/${tag}`)
+      .then((res) => res.json())
+      .then((data) => setPhotos(data.body))
+      .catch((error) => console.error(error))
+      // .finally(() => setLoading(false));
+  }
+  
+  useEffect(() => {
+    fetchPhotos();
+  }, []);
+
+
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <SectionHeader>Featured Företagsfoto</SectionHeader>
+        <SectionHeader>Featured</SectionHeader>
         <FeaturedProjectWrapper>
-          {foretagFeaturedData.map((foretagFeaturedData) => {
+          {photos.map((photo) => {
             return (
               <ProjectCard
-                key={foretagFeaturedData.title}
-                href={foretagFeaturedData.link}>
-                <ThumbnailWrapper url={foretagFeaturedData.image}>
+                key={photo._id}
+                href={photo.link}>
+                <ThumbnailWrapper url={photo.image}>
                   <InfoWrapper>
-                <InfoHeader>{foretagFeaturedData['title']}</InfoHeader>
-                <Info>{foretagFeaturedData['text']}</Info>
+                <InfoHeader>{photo['title']}</InfoHeader>
+                <Info>{photo['text']}</Info>
                 </InfoWrapper>
                 </ThumbnailWrapper>
               </ProjectCard>
