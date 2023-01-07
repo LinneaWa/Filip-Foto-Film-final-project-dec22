@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export const Navbar = () => {
   return (
     <NavbarContainer>
-      <Logo src="./assets/logowhite.png" alt="company logo"></Logo>
+      <Logo src="https://filippilthammar.se/FilipFotoFilm/Icons/logowhite.png" alt="company logo"></Logo>
       <div>
         <select>
           <option value="0">Photo</option>

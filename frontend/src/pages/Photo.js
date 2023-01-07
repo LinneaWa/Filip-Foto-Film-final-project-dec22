@@ -14,12 +14,10 @@ export const Photo = () => {
     <OuterWrapper>
     <InnerWrapper>
         <Headline><span>Filip Foto Film - Photography</span></Headline>
-        <p>Homepage</p>
+        <PhotoGalleryCard tag={'thumbnailPhoto'} />
         <ButtonLink to="/">
             <Buttons type="button">Back Home</Buttons>
         </ButtonLink>
-        <p>Galleries</p>
-        <PhotoGalleryCard tag={'thumbnailPhoto'} />
     </InnerWrapper>
     </OuterWrapper>
     </>

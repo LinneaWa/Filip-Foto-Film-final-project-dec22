@@ -1,8 +1,4 @@
 import Lightroom from 'react-lightbox-gallery';
-// import Sanna from "./Sanna.jpg";
-//import Flisby from '/assets/foto/foretag/Flisby.jpg';
-//import Smaland from '/assets/foto/foretag/Smaland.jpg';
-//import Raski from '/assets/foto/foretag/Raski.jpg';
 
 var images = [
     {

@@ -16,6 +16,10 @@ import { Brollop } from 'pages/photoGalleryPages/brollop';
 import { Familj } from 'pages/photoGalleryPages/familj';
 import { Dronare } from 'pages/photoGalleryPages/dronare';
 import { Photo360 } from 'pages/photoGalleryPages/photo360';
+import { Event } from 'pages/VideoGalleryPages/Event';
+import { Education } from 'pages/VideoGalleryPages/Education';
+import { SocialMedia } from 'pages/VideoGalleryPages/SocialMedia';
+import { MusicVideo } from 'pages/VideoGalleryPages/MusicVideo';
 import { NotFound } from './pages/NotFound';
 
 
@@ -43,6 +47,10 @@ export const App = () => {
         <Route path="/Photo/familj" element={<Familj />} />
         <Route path="/Photo/dronare" element={<Dronare />} />
         <Route path="/Photo/360" element={<Photo360 />} />
+        <Route path="/Video/Event" element={<Event />} />
+        <Route path="/Video/Educational" element={<Education />} />
+        <Route path="/Video/MusicVideo" element={<MusicVideo />} />
+        <Route path="/Video/SocialMedia" element={<SocialMedia />} />
         <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>

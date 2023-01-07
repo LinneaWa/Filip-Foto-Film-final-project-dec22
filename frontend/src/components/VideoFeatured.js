@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import { VIDEO_URL } from 'utils/utils';
 
-export const VideoGalleryCard = ({ tag }) => {
+export const VideoFeatured = ({ tag }) => {
   const [videos, setVideos] = useState([]);
   // const [loading, setLoading] = useState(false);
 
@@ -21,11 +21,11 @@ export const VideoGalleryCard = ({ tag }) => {
     fetchVideos();
   }, []);
 
+
   return (
-    <>
-      <OuterWrapper>
+    <OuterWrapper>
       <InnerWrapper>
-        <SectionHeader>Videoproduction</SectionHeader>
+        <SectionHeader>Featured</SectionHeader>
         <FeaturedProjectWrapper>
           {videos.map((video) => {
             return (
@@ -33,22 +33,20 @@ export const VideoGalleryCard = ({ tag }) => {
                 key={video._id}
                 href={video.link}>
                 <ThumbnailWrapper>
-                  <Video autoPlay muted loop playsInline >
-                    <source src={video['video']} type="video/mp4"/>
-                  </Video>
-                  <ThumbnailTitle>{video.title.toUpperCase()}</ThumbnailTitle>
+                <Video autoPlay controls muted loop playsInline >
+              <source src={video['video']} type="video/mp4"/>
+            </Video>
+                  <InfoWrapper>
+                <InfoHeader>{video['title']}</InfoHeader>
+                <Info>{video['text']}</Info>
+                </InfoWrapper>
                 </ThumbnailWrapper>
-                <ProjectInfoHeader>
-                  {video['title']}
-                </ProjectInfoHeader>
-                <ProjectInfo>{video['text']}</ProjectInfo>
               </ProjectCard>
             );
           })}
         </FeaturedProjectWrapper>
         </InnerWrapper>
         </OuterWrapper>
-        </>
   );
 }
 const OuterWrapper = styled.section`
@@ -62,7 +60,6 @@ padding-top: 30px;
 const InnerWrapper = styled.div`
   width: 80%;
   margin: 0 auto;
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +74,7 @@ const InnerWrapper = styled.div`
 
 const SectionHeader = styled.h2`
 // background-color: ${(props) => props.color};
-background-color: olive;
+background-color: rgb(148, 160, 148);
 color: white;
 font-family: 'Montserrat', sans-serif;
 display: inline-block;
@@ -91,37 +88,26 @@ line-height: 1;
 const FeaturedProjectWrapper = styled.div`
   text-align: left;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
   @media (max-width: 800px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
+
   }
 `;
 
-const ProjectCard = styled.a`
-  transform: translateY(0%);
-  transition: transform 0.5s;
+const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
   text-decoration: none;
-  position: relative;
-  &:hover {
-    transform: translateY(-1%);
-    transition: transform 0.3s;
-  } 
 `;
 
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
+  position: relative;
   text-align: center;
-  height: 300px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,33 +126,36 @@ const Video = styled.video`
 width: 100%;
 `;
 
-const ThumbnailTitle = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  position: absolute;
+const InfoWrapper = styled.div`
+background-color: whitesmoke;
+position: absolute;
+left: 70%;
+right: -30%;
+padding: 20px;
 `;
 
-const ProjectInfoHeader = styled.h2`
+const InfoHeader = styled.p`
   font-family: 'Montserrat', sans-serif;
   // color: ${(props) => props.color};
-  font-size: 18px;
+  color: rgb(50, 50, 50);
+  font-size: 16px;
+  text-align: left;
   ${ProjectCard}:hover & {
     text-decoration: underline;
   }
   @media (max-width: 800px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
-const ProjectInfo = styled.p`
+const Info = styled.p`
   font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 16px;
+  color: rgb(50, 50, 50);
+  text-align: left;
+  font-size: 12px;
   line-height: 1.4;
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
+
   @media (max-width: 800px) {
-    font-size: 18px;
+    font-size: 12px;
   }
 `;
