@@ -23,25 +23,23 @@ export const ContactHome = ({ tag }) => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <SectionHeader>Contact</SectionHeader>
         <SectionWrapper>
           {photos.map((photo) => {
             return (
               <LinkWrapper
-                key={photo._id}
-                href={photo.link}>
-                <ThumbnailWrapper url={photo.image}>
-                  <InfoWrapper>
-                <InfoHeader>{photo['title']}</InfoHeader>
-                <Info>{photo['text']}</Info>
+              key={photo._id}
+              href={photo.link}>
+                <ImageWrapper url={photo.image} />
+                <InfoWrapper>
+                    <InfoHeader>{photo['title']}</InfoHeader>
+                    <Info>{photo['text']}</Info>
                 </InfoWrapper>
-                </ThumbnailWrapper>
               </LinkWrapper>
             );
           })}
         </SectionWrapper>
-        </InnerWrapper>
-        </OuterWrapper>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 }
 const OuterWrapper = styled.section`
@@ -53,7 +51,7 @@ padding-top: 30px;
 `
 
 const InnerWrapper = styled.div`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -103,13 +101,13 @@ const LinkWrapper = styled.a`
   } 
 `;
 
-const ThumbnailWrapper = styled.div`
+const ImageWrapper = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
   text-align: center;
   height: 400px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,9 +124,9 @@ const ThumbnailWrapper = styled.div`
 
 const InfoWrapper = styled.div`
 background-color: whitesmoke;
-position: absolute;
+/* position: absolute;
 left: 70%;
-right: -30%;
+right: -30%; */
 padding: 20px;
 `;
 

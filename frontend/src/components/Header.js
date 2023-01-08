@@ -42,15 +42,19 @@ export const Header = ({ tag }) => {
 }
 
 const HeroContainer = styled.div`
-border: 2px solid red;
 display: flex;
 position: relative;
-width: 100%;
+height: 70vh;
+width: 100vw;
 `
 
 const Hero = styled.video`
-  min-width: 100%;
-  height: auto;
+min-width: 100%;
+min-height: 70vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -5;
 `;
 
 const Headline = styled.div`
@@ -60,7 +64,6 @@ const Headline = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
   width: 100%;
   padding: 20px;
   height: 100%;
