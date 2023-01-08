@@ -7,7 +7,7 @@ import { Home } from './pages/Home'
 import { Video } from './pages/Video'
 import { Photo } from './pages/Photo'
 import { About } from './pages/About'
-import { HowTo } from './pages/HowTo'
+import { Process } from './pages/Process'
 import { Studio } from './pages/Studio'
 import { Contact } from './pages/Contact'
 import { Foretag } from 'pages/photoGalleryPages/foretag';
@@ -39,7 +39,7 @@ export const App = () => {
         <Route path="/Photo" element={<Photo />} />
         <Route path="/Studio" element={<Studio />} />
         <Route path="/About" element={<About />} />
-        <Route path="/HowTo" element={<HowTo />} />
+        <Route path="/Process" element={<Process />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Photo/foretag" element={<Foretag />} />
         <Route path="/Photo/modell" element={<Modell />} />
@@ -49,7 +49,7 @@ export const App = () => {
         <Route path="/Photo/360" element={<Photo360 />} />
         <Route path="/Video/Event" element={<Event />} />
         <Route path="/Video/Educational" element={<Education />} />
-        <Route path="/Video/MusicVideo" element={<MusicVideo />} />
+        <Route path="/Video/Music" element={<MusicVideo />} />
         <Route path="/Video/SocialMedia" element={<SocialMedia />} />
         <Route path="*" element={<NotFound />} />
     </Routes>

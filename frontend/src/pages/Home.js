@@ -4,6 +4,12 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
+import { AboutHome } from 'components/AboutHome';
+import { VideoHome } from 'components/VideoHome';
+import { PhotoHome } from 'components/PhotoHome';
+import { StudioHome } from 'components/StudioHome';
+import { ProcessHome } from 'components/ProcessHome';
+import { ContactHome } from 'components/ContactHome';
 
 export const Home = () => {
   return (
@@ -12,16 +18,14 @@ export const Home = () => {
     <Header tag={'headerHome'} />
     <OuterWrapper>
     <InnerWrapper>
-        <ButtonLink to="/About"><Buttons type="button">About</Buttons></ButtonLink> 
+        <AboutHome tag={'aboutHome'} />
         <Galleries>
-        <ButtonLink to="/Photo"><Buttons type="button">Photo</Buttons></ButtonLink>
-        <ButtonLink to="/Video"><Buttons type="button">Video</Buttons></ButtonLink>
+        <VideoHome tag={'videoHome'} />
+        <PhotoHome tag={'photoHome'} />
         </Galleries>
-        <ButtonLink to="/Studio"><Buttons type="button">Studio</Buttons></ButtonLink>        
-        <ButtonLink to="/HowTo"><Buttons type="button">HowTo</Buttons></ButtonLink>        
-        <ButtonLink to="/Contact"><Buttons type="button">Contact</Buttons></ButtonLink>
-        <ButtonLink to="/"><Buttons type="button">Back Home</Buttons></ButtonLink>
-
+        <StudioHome tag={'studioHome'} />        
+        <ProcessHome tag={'processHome'} />        
+        <ContactHome tag={'contactHome'} />
     </InnerWrapper>
     </OuterWrapper>
     </>
@@ -35,4 +39,5 @@ width: 100%;
 const Galleries = styled.div`
 display: flex;
 flex-direction: row;
+width: 100%;
 `
