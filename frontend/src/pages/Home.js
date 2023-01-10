@@ -32,10 +32,6 @@ export const Home = () => {
   );
 }
 
-const ButtonLink = styled(Link)`
-width: 100%;
-`;
-
 const Galleries = styled.div`
 display: flex;
 flex-direction: row;

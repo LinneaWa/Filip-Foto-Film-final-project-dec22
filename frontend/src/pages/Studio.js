@@ -4,8 +4,9 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
+import { StudioHome } from 'components/StudioHome';
 
-export const Studio = () => {
+export const Studio = ({ tag }) => {
   return (
     <>
     <Navbar />
@@ -13,8 +14,7 @@ export const Studio = () => {
     <OuterWrapper>
     <InnerWrapper>
         <Headline><span>Filip Foto Film - Studio</span></Headline>
-
-        <p>Homepage</p>
+        <StudioHome tag={'studioHome'} />
         <ButtonLink to="/">
             <Buttons type="button">Back Home</Buttons>
         </ButtonLink>

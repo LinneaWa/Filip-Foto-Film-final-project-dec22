@@ -13,7 +13,6 @@ export const Video = () => {
     <Header tag={'headerVideo'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film - Videoproducer</span></Headline>
         <VideoGalleryCard tag={'thumbnailVideo'} />
         <ButtonLink to="/">
             <Buttons type="button">Back Home</Buttons>

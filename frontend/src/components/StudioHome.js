@@ -29,7 +29,9 @@ export const StudioHome = ({ tag }) => {
               <LinkWrapper
               key={photo._id}
               href={photo.link}>
-                <ImageWrapper url={photo.image} />
+                <ImageWrapper url={photo.image}>
+                <ThumbnailTitle>{photo.title.toUpperCase()}</ThumbnailTitle>
+                </ImageWrapper>
                 <InfoWrapper>
                     <InfoHeader>{photo['title']}</InfoHeader>
                     <Info>{photo['text']}</Info>
@@ -101,33 +103,63 @@ const LinkWrapper = styled.a`
   } 
 `;
 
+// const ImageWrapper = styled.div`
+//   background-size: cover;
+//   background-position: center;
+//   position: relative;
+//   text-align: center;
+//   height: 400px;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 20px;
+//   font-size: 24px;
+//   background-image: linear-gradient(180deg, #1c232580, #1c232580),
+//     url(${(props) => props.url});
+//   &:hover {
+//     background-image: linear-gradient(#1c23255e, #1c23255e),
+//       url(${(props) => props.url});
+//   }
+// `;
+
 const ImageWrapper = styled.div`
+  background-image: url(${(props) => props.url});
+  position: relative;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  position: relative;
-  text-align: center;
-  height: 400px;
+  background-repeat: no-repeat;
+  min-height: 100%;
   width: 100%;
+  z-index: 5;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  font-size: 24px;
-  background-image: linear-gradient(180deg, #1c232580, #1c232580),
-    url(${(props) => props.url});
-  &:hover {
-    background-image: linear-gradient(#1c23255e, #1c23255e),
-      url(${(props) => props.url});
-  }
+  font-size: 24px; 
+
+`;
+
+const ThumbnailTitle = styled.h2`
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 `;
 
 const InfoWrapper = styled.div`
 background-color: whitesmoke;
-/* position: absolute;
-left: 70%;
-right: -30%; */
-padding: 20px;
+color: black;
+width: 100%;
+text-align: justify;
+padding: 50px 80px;
 `;
 
 const InfoHeader = styled.p`

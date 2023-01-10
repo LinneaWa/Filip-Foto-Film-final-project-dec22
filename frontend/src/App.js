@@ -4,6 +4,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //import { blabla } from  './Reducers/Blabla'
 import { Home } from './pages/Home'
+import { TestHome } from 'pages/TestHome';
 import { Video } from './pages/Video'
 import { Photo } from './pages/Photo'
 import { About } from './pages/About'
@@ -34,7 +35,7 @@ export const App = () => {
     <>
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<TestHome />} />
         <Route path="/Video" element={<Video />} />
         <Route path="/Photo" element={<Photo />} />
         <Route path="/Studio" element={<Studio />} />
