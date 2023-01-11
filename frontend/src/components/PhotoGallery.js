@@ -1,45 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components/macro'
+import { PHOTO_URL } from 'utils/utils';
 
-export const PhotoGallery = () => {
+export const PhotoGallery = ({ tag }) => {
+  const [photos, setPhotos] = useState([]);
+  // const [loading, setLoading] = useState(false);
+
+
+  const fetchPhotos = () => {
+    // setLoading(true);
+    fetch(`${PHOTO_URL}/tag/${tag}`)
+      .then((res) => res.json())
+      .then((data) => setPhotos(data.body))
+      .catch((error) => console.error(error))
+      // .finally(() => setLoading(false));
+  }
+  
+  useEffect(() => {
+    fetchPhotos();
+  }, []);
+
   return (
     <>
-        <SectionHeader>Företagsfoto</SectionHeader>
         <FeaturedProjectWrapper>
-          {foretagGalleryData.map((foretagGalleryData) => {
+          {photos.map((photos) => {
             return (
-              <ProjectCard
-                key={foretagGalleryData.link}
-                href={foretagGalleryData.link}>
-                <ThumbnailWrapper url={foretagGalleryData.image}>
-                </ThumbnailWrapper>
-              </ProjectCard>
+              <PhotoCard key={photos._id}>
+                <ThumbnailWrapper url={photos.image}></ThumbnailWrapper>
+              </PhotoCard>
             );
           })}
         </FeaturedProjectWrapper>
         </>
   );
 }
-const OuterWrapper = styled.section`
-width: 100%;
-// background-color: ${(props) => props.backColor};
-`
 
-const InnerWrapper = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  line-height: 1.4;
-  @media (max-width: 800px) {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-`;
 
 const SectionHeader = styled.h2`
 // background-color: ${(props) => props.color};
@@ -57,8 +52,9 @@ line-height: 1;
 const FeaturedProjectWrapper = styled.div`
   text-align: left;
   width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   margin-bottom: 50px;
   @media (max-width: 800px) {
@@ -69,7 +65,7 @@ const FeaturedProjectWrapper = styled.div`
   }
 `;
 
-const ProjectCard = styled.a`
+const PhotoCard = styled.div`
   transform: translateY(0%);
   transition: transform 0.5s;
   display: flex;
@@ -88,48 +84,13 @@ const ThumbnailWrapper = styled.div`
   background-position: center;
   border-radius: 20px;
   text-align: center;
-  height: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   font-size: 24px;
-  background-image: linear-gradient(180deg, #1c232580, #1c232580),
+  background-image:
     url(${(props) => props.url});
-  &:hover {
-    background-image: linear-gradient(#1c23255e, #1c23255e),
-      url(${(props) => props.url});
-  }
-`;
-
-const ThumbnailTitle = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  position: absolute;
-`;
-
-const ProjectInfoHeader = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  // color: ${(props) => props.color};
-  font-size: 18px;
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
-  @media (max-width: 800px) {
-    font-size: 18px;
-  }
-`;
-
-const ProjectInfo = styled.p`
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 16px;
-  line-height: 1.4;
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
-  @media (max-width: 800px) {
-    font-size: 18px;
-  }
 `;

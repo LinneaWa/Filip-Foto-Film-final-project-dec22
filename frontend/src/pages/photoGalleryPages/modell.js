@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { PhotoFeatured } from 'components/PhotoFeatured';
+import { PhotoGallery } from 'components/PhotoGallery';
 
 export const Modell = () => {
   return (
@@ -13,11 +14,8 @@ export const Modell = () => {
     <Header tag={'headerModell'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Modellfoto Filip Foto Film</span></Headline>
         <PhotoFeatured tag={'featuredModell'}/>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <PhotoGallery tag={'lightboxModell'}/>
     </InnerWrapper>
     </OuterWrapper>
     </>

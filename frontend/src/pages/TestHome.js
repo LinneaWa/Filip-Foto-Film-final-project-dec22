@@ -13,8 +13,9 @@ export const TestHome = () => {
         <HeaderHeadline><h1>Hero Headline</h1></HeaderHeadline>
     </Header>
     <OuterWrapper>
+    <InnerWrapper>
     <ExampleTextDiv><p>Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></ExampleTextDiv>
-    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/aboutTest.jpeg'>
+    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/Images/startsida/startsidaAbout.jpg'>
         <InfoWrapper>
             <InfoHeader>About</InfoHeader>
             <Info>About Filip and company</Info>
@@ -35,14 +36,14 @@ export const TestHome = () => {
         </InfoWrapper>
     </RowWrapper>
     </Galleries>
-    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg'>
+    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/Images/startsida/StartsidaStudio.jpg'>
         <InfoWrapper>
             <InfoHeader>Studio</InfoHeader>
             <Info>Välkomna att titta in i min studion och boka en tid</Info>
         </InfoWrapper>
     </ThumbnailWrapper>
     <ExampleTextDiv><p>Placeholder text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></ExampleTextDiv>
-    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/contactTest.jpeg'>
+    <ThumbnailWrapper url='https://filippilthammar.se/FilipFotoFilm/Images/startsida/StartsidaProcess.jpg'>
         <InfoWrapper>
             <InfoHeader>Process</InfoHeader>
             <Info>Såhär går det till att jobba med mig</Info>
@@ -55,6 +56,7 @@ export const TestHome = () => {
             <Info>Berätta om din idé!</Info>
         </InfoWrapper>
     </ThumbnailWrapper>
+    </InnerWrapper>
     </OuterWrapper>
     </>
   );
@@ -63,10 +65,19 @@ export const TestHome = () => {
 const OuterWrapper = styled.section`
     background-color:  rgb(208, 215, 208);
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
 `
+const InnerWrapper = styled.section`
+    width: 100%;
+    max-width: 1800px;
+    justify-content: center;
+    align-items: center;
+
+`
+
 
 const Header = styled.div`
     display: flex;
@@ -130,14 +141,13 @@ const RowWrapper = styled.div`
 
 const ThumbnailWrapper = styled.div`
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
-  height: 500px;
-  width: auto;
-  max-width: 100vw;
+  height: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +162,7 @@ const ThumbnailWrapper = styled.div`
   margin: 20px;
   z-index: 2;
 `;
+
 
 const InfoWrapper = styled.div`
     color: antiquewhite;
@@ -172,7 +183,7 @@ const Info = styled.p`
 `;
 
 const ExampleTextDiv = styled.div`
-    height: 200px;
+    height: 150px;
     text-align: justify;
     background-color:  rgb(208, 215, 208);
     padding: 60px;

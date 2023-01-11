@@ -16,6 +16,7 @@ export const InnerWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1600px;
   text-align: center;
 `;
 
@@ -26,7 +27,7 @@ export const OuterWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  // background-color: #9fafd3;
+  background-color:  rgb(208, 215, 208);
 `;
 
 export const Headline = styled.h1`

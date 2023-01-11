@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
 import { PhotoFeatured } from 'components/PhotoFeatured';
+import { PhotoGallery } from 'components/PhotoGallery';
 
 export const Brollop = () => {
   return (
@@ -13,11 +14,8 @@ export const Brollop = () => {
     <Header tag={'headerBrollop'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Bröllop Filip Foto Film</span></Headline>
         <PhotoFeatured tag={'featuredBrollop'}/>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <PhotoGallery tag={'lightboxBrollop'}/>
     </InnerWrapper>
     </OuterWrapper>
     </>

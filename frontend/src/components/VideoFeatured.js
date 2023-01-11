@@ -33,13 +33,13 @@ export const VideoFeatured = ({ tag }) => {
                 key={video._id}
                 href={video.link}>
                 <ThumbnailWrapper>
-                <Video autoPlay controls muted loop playsInline >
-              <source src={video['video']} type="video/mp4"/>
-            </Video>
+                  <Video autoPlay controls muted loop playsInline >
+                    <source src={video['video']} type="video/mp4"/>
+                  </Video>
                   <InfoWrapper>
-                <InfoHeader>{video['title']}</InfoHeader>
-                <Info>{video['text']}</Info>
-                </InfoWrapper>
+                    <InfoHeader>{video['title']}</InfoHeader>
+                    <Info>{video['text']}</Info>
+                  </InfoWrapper>
                 </ThumbnailWrapper>
               </ProjectCard>
             );

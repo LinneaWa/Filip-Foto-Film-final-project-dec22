@@ -49,7 +49,7 @@ export const App = () => {
         <Route path="/Photo/dronare" element={<Dronare />} />
         <Route path="/Photo/360" element={<Photo360 />} />
         <Route path="/Video/Event" element={<Event />} />
-        <Route path="/Video/Educational" element={<Education />} />
+        <Route path="/Video/Education" element={<Education />} />
         <Route path="/Video/Music" element={<MusicVideo />} />
         <Route path="/Video/SocialMedia" element={<SocialMedia />} />
         <Route path="*" element={<NotFound />} />

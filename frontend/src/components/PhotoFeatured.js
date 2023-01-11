@@ -25,13 +25,11 @@ export const PhotoFeatured = ({ tag }) => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <SectionHeader>Featured</SectionHeader>
         <FeaturedProjectWrapper>
           {photos.map((photo) => {
             return (
               <ProjectCard
-                key={photo._id}
-                href={photo.link}>
+                key={photo._id}>
                 <ThumbnailWrapper url={photo.image}>
                   <InfoWrapper>
                 <InfoHeader>{photo['title']}</InfoHeader>
@@ -93,7 +91,7 @@ const FeaturedProjectWrapper = styled.div`
   }
 `;
 
-const ProjectCard = styled.a`
+const ProjectCard = styled.div`
   transform: translateY(0%);
   transition: transform 0.5s;
   display: flex;
@@ -108,6 +106,7 @@ const ProjectCard = styled.a`
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
   position: relative;
   text-align: center;
   height: 400px;
@@ -118,12 +117,8 @@ const ThumbnailWrapper = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   font-size: 24px;
-  background-image: linear-gradient(180deg, #1c232580, #1c232580),
-    url(${(props) => props.url});
-  &:hover {
-    background-image: linear-gradient(#1c23255e, #1c23255e),
-      url(${(props) => props.url});
-  }
+  background-image: url(${(props) => props.url});
+
 `;
 
 const InfoWrapper = styled.div`

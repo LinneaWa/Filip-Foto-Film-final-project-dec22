@@ -4,6 +4,8 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from 'GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Navbar } from 'components/Navbar';
 import { Header } from 'components/Header';
+import { VideoFeatured } from 'components/VideoFeatured';
+import { VideoGallery } from 'components/Videogallery';
 
 export const SocialMedia = () => {
   return (
@@ -12,10 +14,8 @@ export const SocialMedia = () => {
     <Header tag={'headerSocialMedia'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Social Media Videos Filip Foto Film</span></Headline>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+      <VideoFeatured tag={'featuredSocialMedia'}/>
+      <VideoGallery tag={'otherSocialMedia'}/>
     </InnerWrapper>
     </OuterWrapper>
     </>

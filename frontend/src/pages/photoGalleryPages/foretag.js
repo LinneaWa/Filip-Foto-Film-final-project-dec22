@@ -13,13 +13,12 @@ export const Foretag = () => {
     <>
     <Navbar />
     <Header tag={'headerForetag'} />
+    <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Företag</span></Headline>
-        {/*<ForetagPhotoGallery /> */}
         <PhotoFeatured tag={'featuredForetag'}/>
-        <TEST2lightbox />
-        <ButtonLink to="/"><Buttons type="button">Back Home</Buttons></ButtonLink>
+        <PhotoGallery tag={'lightboxForetag'}/>
     </InnerWrapper>
+    </OuterWrapper>
     </>
   );
 }

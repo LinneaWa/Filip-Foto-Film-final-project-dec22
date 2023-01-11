@@ -4,6 +4,8 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from 'GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Navbar } from 'components/Navbar';
 import { Header } from 'components/Header';
+import { VideoFeatured } from 'components/VideoFeatured';
+import { VideoGallery } from 'components/Videogallery';
 
 export const Education = () => {
   return (
@@ -12,10 +14,8 @@ export const Education = () => {
     <Header tag={'headerEducation'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Educationvideos Filip Foto Film</span></Headline>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+      <VideoFeatured tag={'featuredEducation'}/>
+      <VideoGallery tag={'otherEducation'}/>
     </InnerWrapper>
     </OuterWrapper>
     </>

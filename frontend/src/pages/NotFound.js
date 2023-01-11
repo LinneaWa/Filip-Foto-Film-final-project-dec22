@@ -12,12 +12,7 @@ export const NotFound = () => {
     <Header tag={'headerNotFound'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film was not found</span></Headline>
-
-        <p>Homepage</p>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <Headline><span>Not found</span></Headline>
     </InnerWrapper>
     </OuterWrapper>
     </>
