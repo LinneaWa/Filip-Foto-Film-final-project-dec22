@@ -26,7 +26,6 @@ export const PhotoGalleryCard = ({ tag }) => {
   return (
     <>
     <OuterWrapper>
-        <SectionHeader>Photography</SectionHeader>
         <FeaturedProjectWrapper>
           {photos.map((photo) => {
             return (
@@ -50,8 +49,8 @@ export const PhotoGalleryCard = ({ tag }) => {
 }
 const OuterWrapper = styled.section`
 width: 100%;
+padding: 80px;
 background-color:  rgb(208, 215, 208);
-// background-color: ${(props) => props.backColor};
 `
 
 const InnerWrapper = styled.div`

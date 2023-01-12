@@ -26,7 +26,7 @@ export const Header = ({ tag }) => {
 
 
   return (
-    <div>
+    <HeroWrapper>
       {videos.map((video) => {
         return (
           <HeroContainer key={video._id}>
@@ -37,20 +37,24 @@ export const Header = ({ tag }) => {
           </HeroContainer>
         );
       })}
-    </div>
+    </HeroWrapper>
   );
 }
+
+const HeroWrapper = styled.div`
+display: flex;
+`
 
 const HeroContainer = styled.div`
 display: flex;
 position: relative;
-height: 70vh;
-width: 100vw;
+height: 50vh;
+width: 100%;
 `
 
 const Hero = styled.video`
 min-width: 100%;
-min-height: 70vh;
+min-height: 50vh;
 position: fixed;
 top: 0;
 left: 0;
@@ -59,17 +63,19 @@ z-index: -5;
 
 const Headline = styled.div`
   box-sizing: border-box;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 33px;
+  color: antiquewhite;
   position: absolute;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px;
+  padding: 80px;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.4);
-  color: #f1f1f1;
 `

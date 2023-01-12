@@ -22,7 +22,7 @@ export const PhotoGallery = ({ tag }) => {
 
   return (
     <>
-        <FeaturedProjectWrapper>
+      <Wrapper>
           {photos.map((photos) => {
             return (
               <PhotoCard key={photos._id}>
@@ -30,26 +30,12 @@ export const PhotoGallery = ({ tag }) => {
               </PhotoCard>
             );
           })}
-        </FeaturedProjectWrapper>
-        </>
+      </Wrapper>
+    </>
   );
 }
 
-
-const SectionHeader = styled.h2`
-// background-color: ${(props) => props.color};
-background-color: olive;
-color: white;
-font-family: 'Montserrat', sans-serif;
-display: inline-block;
-font-size: 22px;
-line-height: 1;
-padding: 5px 10px;
-margin: 20px 0 20px 0;
-line-height: 1;
-`;
-
-const FeaturedProjectWrapper = styled.div`
+const Wrapper = styled.div`
   text-align: left;
   width: 100%;
   height: 100%;

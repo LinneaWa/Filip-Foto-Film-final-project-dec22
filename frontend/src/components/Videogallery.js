@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components/macro'
+import { Link } from 'react-router-dom'
 import { VIDEO_URL } from 'utils/utils';
 
 export const VideoGallery = ({ tag }) => {
@@ -22,40 +23,30 @@ export const VideoGallery = ({ tag }) => {
 
   return (
     <>
-        <FeaturedProjectWrapper>
+        <Wrapper>
           {videos.map((video) => {
             return (
-              <PhotoCard key={video._id}>
+              <Card key={video._id}>
                 <ThumbnailWrapper>                
                     <Video autoPlay controls muted loop playsInline >
                         <source src={video['video']} type="video/mp4"/>
                     </Video>
                 </ThumbnailWrapper>
-              </PhotoCard>
+                <Link to={video.link}>
+                  <Buttons type="button">Se hela videon här!</Buttons>
+                </Link>
+              </Card>
             );
           })}
-        </FeaturedProjectWrapper>
+        </Wrapper>
         </>
   );
 }
 
 
-const SectionHeader = styled.h2`
-// background-color: ${(props) => props.color};
-background-color: olive;
-color: white;
-font-family: 'Montserrat', sans-serif;
-display: inline-block;
-font-size: 22px;
-line-height: 1;
-padding: 5px 10px;
-margin: 20px 0 20px 0;
-line-height: 1;
-`;
-
-const FeaturedProjectWrapper = styled.div`
+const Wrapper = styled.div`
   text-align: left;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -73,14 +64,13 @@ const Video = styled.video`
 width: 100%;
 `;
 
-const PhotoCard = styled.div`
+const Card = styled.div`
   transform: translateY(0%);
   transition: transform 0.5s;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
   text-decoration: none;
-  position: relative;
   &:hover {
     transform: translateY(-1%);
     transition: transform 0.3s;
@@ -88,17 +78,19 @@ const PhotoCard = styled.div`
 `;
 
 const ThumbnailWrapper = styled.div`
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  text-align: center;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  height: 390px;
+  padding-bottom: 20px;
   font-size: 24px;
-  background-image:
-    url(${(props) => props.url});
 `;
+
+const Buttons = styled.button`
+cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+font-size: 18px;
+color: rgb(109, 123, 109);
+background-color:  whitesmoke;
+border: 3px solid rgb(148, 160, 148);
+border-radius: 10px;
+padding: 10px;
+`

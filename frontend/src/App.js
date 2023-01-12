@@ -1,8 +1,5 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-//import { blabla } from  './Reducers/Blabla'
 import { Home } from './pages/Home'
 import { TestHome } from 'pages/TestHome';
 import { Video } from './pages/Video'
@@ -23,12 +20,6 @@ import { SocialMedia } from 'pages/VideoGalleryPages/SocialMedia';
 import { MusicVideo } from 'pages/VideoGalleryPages/MusicVideo';
 import { NotFound } from './pages/NotFound';
 
-
-// const reducer = combineReducers({
-//   bla: blabla.reducer,
-// })
-
-// onst store = configureStore({reducer})
 
 export const App = () => {
   return (
@@ -58,5 +49,3 @@ export const App = () => {
     </>
   );
 };
-
-// provider if reducer and store is put back

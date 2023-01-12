@@ -4,7 +4,7 @@ import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';
-import { VideoGalleryCard } from 'components/VideoGalleryCard';
+import { PhotoGalleryCard } from 'components/PhotoGalleryCard';
 
 export const Video = () => {
   return (
@@ -13,10 +13,7 @@ export const Video = () => {
     <Header tag={'headerVideo'} />
     <OuterWrapper>
     <InnerWrapper>
-        <VideoGalleryCard tag={'thumbnailVideo'} />
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
+        <PhotoGalleryCard tag={'thumbnailVideo'} />
     </InnerWrapper>
     </OuterWrapper>
     </>

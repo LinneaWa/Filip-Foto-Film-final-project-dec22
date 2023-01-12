@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { OuterWrapper, InnerWrapper, Buttons, Headline } from '../GlobalStyles';
+import { OuterWrapper, InnerWrapper } from '../GlobalStyles';
 import { Link } from 'react-router-dom'
 import { Header } from 'components/Header';
 import { Navbar } from 'components/Navbar';

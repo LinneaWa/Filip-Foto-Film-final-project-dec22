@@ -1,15 +1,5 @@
 import styled from 'styled-components/macro'
 
-export const Buttons = styled.button`
-  position: relative;
-  border: none;
-  background: #6580b0;
-  cursor: pointer;
-  color: #fff;
-  width: 100%;
-  height: 30px;
-`;
-
 export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;

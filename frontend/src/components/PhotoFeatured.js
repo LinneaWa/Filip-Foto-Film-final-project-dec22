@@ -25,21 +25,20 @@ export const PhotoFeatured = ({ tag }) => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <FeaturedProjectWrapper>
+        <FeaturedWrapper>
           {photos.map((photo) => {
             return (
-              <ProjectCard
+              <Card
                 key={photo._id}>
-                <ThumbnailWrapper url={photo.image}>
-                  <InfoWrapper>
-                <InfoHeader>{photo['title']}</InfoHeader>
-                <Info>{photo['text']}</Info>
+                <ThumbnailWrapper url={photo.image}></ThumbnailWrapper>
+                <InfoWrapper>
+                  <InfoHeader>{photo['title']}</InfoHeader>
+                  <Info>{photo['text']}</Info>
                 </InfoWrapper>
-                </ThumbnailWrapper>
-              </ProjectCard>
+              </Card>
             );
           })}
-        </FeaturedProjectWrapper>
+        </FeaturedWrapper>
         </InnerWrapper>
         </OuterWrapper>
   );
@@ -47,110 +46,72 @@ export const PhotoFeatured = ({ tag }) => {
 const OuterWrapper = styled.section`
 width: 100%;
 background-color:  rgb(208, 215, 208);
-padding-bottom: 50px;
-padding-top: 30px;
-// background-color: ${(props) => props.backColor};
 `
 
 const InnerWrapper = styled.div`
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  line-height: 1.4;
-  @media (max-width: 800px) {
-    font-size: 16px;
-    line-height: 1.4;
-  }
 `;
 
-const SectionHeader = styled.h2`
-// background-color: ${(props) => props.color};
-background-color: rgb(148, 160, 148);
-color: white;
-font-family: 'Montserrat', sans-serif;
-display: inline-block;
-font-size: 22px;
-line-height: 1;
-padding: 5px 10px;
-margin: 20px 0 20px 0;
-line-height: 1;
-`;
-
-const FeaturedProjectWrapper = styled.div`
+const FeaturedWrapper = styled.div`
   text-align: left;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  @media (max-width: 800px) {
-
-  }
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
 
-const ProjectCard = styled.div`
-  transform: translateY(0%);
-  transition: transform 0.5s;
+const Card = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  &:hover {
-    transform: translateY(-1%);
-    transition: transform 0.3s;
-  } 
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &:nth-child(odd) { flex-direction: row; }
 `;
 
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  position: relative;
-  text-align: center;
-  height: 400px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  height: 40vw;
+  width: 40vw;
   background-image: url(${(props) => props.url});
-
 `;
 
 const InfoWrapper = styled.div`
-background-color: whitesmoke;
-position: absolute;
-left: 70%;
-right: -30%;
-padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
 `;
 
 const InfoHeader = styled.p`
   font-family: 'Montserrat', sans-serif;
-  // color: ${(props) => props.color};
-  color: rgb(50, 50, 50);
-  font-size: 16px;
-  text-align: left;
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
-  @media (max-width: 800px) {
-    font-size: 16px;
-  }
+  color: rgb(109, 123, 109);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
 `;
 
 const Info = styled.p`
   font-family: 'Montserrat', sans-serif;
-  color: rgb(50, 50, 50);
-  text-align: left;
-  font-size: 12px;
-  line-height: 1.4;
-
-  @media (max-width: 800px) {
-    font-size: 12px;
-  }
+  color: rgb(109, 123, 109);
+  text-align: center;
+  font-size: 20px;
 `;

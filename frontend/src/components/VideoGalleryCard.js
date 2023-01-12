@@ -25,7 +25,6 @@ export const VideoGalleryCard = ({ tag }) => {
     <>
       <OuterWrapper>
       <InnerWrapper>
-        <SectionHeader>Videoproduction</SectionHeader>
         <FeaturedProjectWrapper>
           {videos.map((video) => {
             return (
