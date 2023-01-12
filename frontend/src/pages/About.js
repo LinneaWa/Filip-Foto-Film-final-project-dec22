@@ -12,12 +12,7 @@ export const About = () => {
     <Header tag={'headerAbout'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>About Filip Foto Film</span></Headline>
 
-        <p>Homepage</p>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
     </InnerWrapper>
     </OuterWrapper>
     </>

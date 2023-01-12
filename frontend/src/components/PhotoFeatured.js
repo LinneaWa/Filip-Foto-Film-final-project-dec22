@@ -1,20 +1,16 @@
 import React, { useState, useEffect} from 'react';
 import styled from 'styled-components/macro'
-import { Link } from 'react-router-dom'
 import { PHOTO_URL } from 'utils/utils';
 
 export const PhotoFeatured = ({ tag }) => {
   const [photos, setPhotos] = useState([]);
-  // const [loading, setLoading] = useState(false);
 
 
   const fetchPhotos = () => {
-    // setLoading(true);
     fetch(`${PHOTO_URL}/tag/${tag}`)
       .then((res) => res.json())
       .then((data) => setPhotos(data.body))
       .catch((error) => console.error(error))
-      // .finally(() => setLoading(false));
   }
   
   useEffect(() => {
@@ -28,14 +24,14 @@ export const PhotoFeatured = ({ tag }) => {
         <FeaturedWrapper>
           {photos.map((photo) => {
             return (
-              <Card
+              <FeaturedPhotoCard
                 key={photo._id}>
                 <ThumbnailWrapper url={photo.image}></ThumbnailWrapper>
                 <InfoWrapper>
                   <InfoHeader>{photo['title']}</InfoHeader>
                   <Info>{photo['text']}</Info>
                 </InfoWrapper>
-              </Card>
+              </FeaturedPhotoCard>
             );
           })}
         </FeaturedWrapper>
@@ -68,7 +64,7 @@ const FeaturedWrapper = styled.div`
   padding-bottom: 50px;
 `;
 
-const Card = styled.div`
+const FeaturedPhotoCard = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;

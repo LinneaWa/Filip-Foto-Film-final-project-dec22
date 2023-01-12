@@ -74,7 +74,7 @@ export const TestHome = () => {
     <ThumbnailWrapperContact url='https://filippilthammar.se/FilipFotoFilm/contactTest.jpeg'>
         <InfoWrapperContact>
             <InfoHeader>Kontakta mig direkt</InfoHeader>
-            <Info>Berätta om din idé!</Info>
+            <InfoContact>Berätta om din idé!</InfoContact>
         </InfoWrapperContact>
     </ThumbnailWrapperContact>
     </Links>
@@ -140,7 +140,7 @@ const ThumbnailWrapper = styled.div`
   background-position: center;
   position: relative;
   text-align: center;
-  height: 700px;
+  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -166,12 +166,13 @@ const ExampleTextDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     background-color:  rgb(208, 215, 208);
 
     p {
-    border: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
     //margin: 80px;
     padding: 50px;
     font-weight: bold;
@@ -190,7 +191,7 @@ const MoreInfo = styled.p`
     border: 3px solid white;
     padding: 10px;
     margin-bottom: 40px;
-    font-size; 25px;
+    font-size: 25px;
 
 `
 
@@ -205,8 +206,6 @@ const ThumbnailWrapperAbout = styled.div`
   text-align: center;
   height: 600px;
   width: 98%;
-  //display: flex;
-  //justify-content: center;
   font-size: 24px;
   background-image: linear-gradient(180deg, #1c232580, #1c232580),
     url(${(props) => props.url});
@@ -223,7 +222,7 @@ const InfoWrapperAbout = styled.div`
     color: antiquewhite;
     position: absolute;
     font-family: 'Fjalla One', sans-serif;
-    top: 30%;
+    top: 20%;
     right: 10%;
     padding: 20px;
 `;
@@ -286,6 +285,7 @@ const ExampleTextDivStudio = styled.div`
     justify-content: center;
     align-items: center;
     background-color:  rgb(208, 215, 208);
+    margin-bottom: 50px;
 
     p {
     margin: 20px;
@@ -305,6 +305,7 @@ const ExampleTextDivProcess = styled.div`
     justify-content: center;
     align-items: center;
     background-color:  rgb(208, 215, 208);
+    margin-bottom: 50px;
 
     p {
     margin: 20px;
@@ -335,11 +336,18 @@ const ThumbnailWrapperContact = styled.div`
 `;
 
 const InfoWrapperContact = styled.div`
-    color: antiquewhite;
+    color: white;
     font-family: 'Fjalla One', sans-serif;
     position: absolute;
     top: 20%;
     left: 15%;
     font-weight: bold;
     padding: 20px;
+`;
+
+const InfoContact = styled.p`
+  text-align: center;
+  font-size: 35px;
+  border: 3px solid white;
+  padding: 10px;
 `;

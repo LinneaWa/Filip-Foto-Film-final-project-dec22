@@ -28,7 +28,7 @@ export const VideoFeatured = ({ tag }) => {
         <FeaturedWrapper>
           {videos.map((video) => {
             return (
-              <Card
+              <FeaturedVideoCard
                 key={video._id}
                 href={video.link}>
                 <ThumbnailWrapper>
@@ -43,7 +43,7 @@ export const VideoFeatured = ({ tag }) => {
                       <Buttons type="button">Se hela videon här!</Buttons>
                     </Link>
                   </InfoWrapper>
-              </Card>
+              </FeaturedVideoCard>
             );
           })}
         </FeaturedWrapper>
@@ -76,7 +76,7 @@ const FeaturedWrapper = styled.div`
   padding-bottom: 50px;
 `;
 
-const Card = styled.div`
+const FeaturedVideoCard = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;

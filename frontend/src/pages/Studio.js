@@ -13,11 +13,7 @@ export const Studio = ({ tag }) => {
     <Header tag={'headerStudio'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Filip Foto Film - Studio</span></Headline>
         <StudioHome tag={'studioHome'} />
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
     </InnerWrapper>
     </OuterWrapper>
     </>

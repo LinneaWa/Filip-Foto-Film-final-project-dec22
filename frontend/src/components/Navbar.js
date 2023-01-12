@@ -11,7 +11,7 @@ export const Navbar = () => {
       </Link>
         <MenuContainer>
         <Dropdown>
-            <span>Foto</span>
+            <Links to="/photo"><span>Foto</span></Links>
             <DropdownContent>
               <Links to="/Photo/foretag" ><p>Företagsfoto</p></Links>
               <Links to="/Photo/dronare" ><p>Drönarfoto</p></Links>
@@ -22,7 +22,7 @@ export const Navbar = () => {
             </DropdownContent>
           </Dropdown>
           <Dropdown>
-            <span>Video</span>
+          <Links to="/video"><span>Video</span></Links>
             <DropdownContent>
               <Links to="/Video/Event" ><p>Event</p></Links>
               <Links to="/Video/Music" ><p>Musicvideo</p></Links>
@@ -31,23 +31,16 @@ export const Navbar = () => {
             </DropdownContent>
           </Dropdown>
           <Dropdown>
-            <span>Om mig</span>
-            <DropdownContent>
-              <Links to="/About" ><p>Om mig</p></Links>
-              <Links to="/process" ><p>Hur det funkar att jobba med mig</p></Links>
-            </DropdownContent>
+          <Links to="/Studio"><span>Studio</span></Links>
           </Dropdown>
           <Dropdown>
-            <span>Studio</span>
-            <DropdownContent>
-              <Links to="/Studio" ><p>Min studio</p></Links>
-            </DropdownContent>
+          <Links to="/About"><span>Om mig</span></Links>
           </Dropdown>
           <Dropdown>
-            <span>Kontakt</span>
-            <DropdownContent>
-              <Links to="/Contact" ><p>Kontakta mig</p></Links>
-            </DropdownContent>
+          <Links to="/Studio"><span>Så funkar det</span></Links>
+          </Dropdown>
+          <Dropdown>
+          <Links to="/contact"><span>Kontakt</span></Links>
           </Dropdown>
       </MenuContainer>
       

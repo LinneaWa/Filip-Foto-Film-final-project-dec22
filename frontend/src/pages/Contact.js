@@ -12,12 +12,7 @@ export const Contact = () => {
     <Header tag={'headerContact'} />
     <OuterWrapper>
     <InnerWrapper>
-        <Headline><span>Contact Filip Foto Film</span></Headline>
 
-        <p>Homepage</p>
-        <ButtonLink to="/">
-            <Buttons type="button">Back Home</Buttons>
-        </ButtonLink>
     </InnerWrapper>
     </OuterWrapper>
     </>

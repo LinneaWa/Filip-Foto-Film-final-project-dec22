@@ -36,18 +36,21 @@ export const PhotoGallery = ({ tag }) => {
 }
 
 const Wrapper = styled.div`
-  text-align: left;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   margin-bottom: 50px;
-  @media (max-width: 800px) {
-    display: grid;
-    grid-template-columns: 1fr;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin-bottom: 50px;
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 `;
 
@@ -70,7 +73,7 @@ const ThumbnailWrapper = styled.div`
   background-position: center;
   border-radius: 20px;
   text-align: center;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
