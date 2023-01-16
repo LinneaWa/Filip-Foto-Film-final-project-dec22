@@ -39,18 +39,19 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1fr;
+  gap: 30px;
   margin-bottom: 50px;
 
-  @media (max-width: 1000px) {
+
+  @media (min-width: 668px) {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 
-  @media (max-width: 750px) {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
   }
 `;
 

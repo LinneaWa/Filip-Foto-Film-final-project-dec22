@@ -100,25 +100,45 @@ const InnerWrapper = styled.section`
 `
 
 const Header = styled.div`
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
+  height: 50vh;
+  max-width: 100vw;
+
+  @media (min-width: 668px) {
+    height: 50vh;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1024px) {
     height: 70vh;
-    max-width: 100vw;
+    max-width: 100vw; 
+  }
 `
 
 const Hero = styled.video`
+  min-width: 100vw;
+  min-height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+  @media (min-width: 668px) {
     min-width: 100vw;
-    min-height: 70vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
+    min-height: 60vh;
+  }
+
+  @media (min-width: 1024px) {
+    min-width: 100vw;
+    min-height: 70vh;   
+  }
 `;
 
 const HeaderHeadline = styled.div`
   box-sizing: border-box;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 33px;
+  font-size: 20px;
   color: antiquewhite;
   position: absolute;
   display: flex;
@@ -133,6 +153,17 @@ const HeaderHeadline = styled.div`
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.4);
+
+  @media (min-width: 668px) {
+    font-size: 33px;
+    padding: 60px;
+
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 33px;
+    padding: 80px;
+  }
 `
 
 const ThumbnailWrapper = styled.div`
@@ -152,35 +183,62 @@ const ThumbnailWrapper = styled.div`
 `;
 
 const InfoHeader = styled.p`
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   width: auto;
+
+  @media (min-width: 668px) {
+    font-size: 35px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 45px;
+  }
 `;
 
 const Info = styled.p`
   text-align: center;
-  font-size: 35px;
+  font-size: 24px;
+
+  @media (min-width: 668px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 33px;
+  }
 `;
 
 const ExampleTextDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     background-color:  rgb(208, 215, 208);
 
-    p {
+  p {
     border-left: 5px solid white;
     border-right: 5px solid white;
-    //margin: 80px;
-    padding: 50px;
+    padding: 30px;
     font-weight: bold;
     text-align: center;
     color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    @media (min-width: 668px) {
+      font-size: 28px;
     }
+
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      padding: 50px;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
 `;
 
 const Links = styled(Link)`
@@ -205,7 +263,7 @@ const ThumbnailWrapperAbout = styled.div`
   position: relative;
   text-align: center;
   height: 600px;
-  width: 98%;
+  width: 100%;
   font-size: 24px;
   background-image: linear-gradient(180deg, #1c232580, #1c232580),
     url(${(props) => props.url});
@@ -213,42 +271,72 @@ const ThumbnailWrapperAbout = styled.div`
     background-image: linear-gradient(#1c23255e, #1c23255e),
       url(${(props) => props.url});
   }
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 2;
 `;
 
 const InfoWrapperAbout = styled.div`
-    width: 30%;
+    width: 50%;
     color: antiquewhite;
     position: absolute;
     font-family: 'Fjalla One', sans-serif;
-    top: 20%;
+    top: 10%;
     right: 10%;
     padding: 20px;
+
+
+  @media (min-width: 668px) {
+    width: 30%;
+    top: 15%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+    top: 20%;
+  }
+
 `;
 
 //Individual styling for Photo and Video section
 
 const Galleries = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-bottom: 100px;
+
+    @media (min-width: 668px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
 `
 const RowWrapper = styled.div`
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
-  height: 40vw;
-  width: 40vw;
-  font-size: 24px;
+  height: 85vw;
+  width: 85vw;
   background-image: url(${(props) => props.url});
   margin: 20px;
   z-index: 2;
+
+  @media (min-width: 668px) {
+    height: 45vw;
+    width: 45vw;
+  }
+
+  @media (min-width: 1024px) {
+      height: 45vw;
+      width: 45vw;
+  }
 `
 
 const InfoWrapperGalleries = styled.div`
@@ -261,19 +349,35 @@ const InfoWrapperGalleries = styled.div`
 `;
 
 const InfoHeaderGall = styled.p`
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   width: 100%;
   position: absolute;
   top: 1%;
+
+  @media (min-width: 668px) {
+    font-size: 35px;
+  }
+
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
 `;
 
 const InfoGall = styled.p`
   text-align: center;
-  font-size: 35px;
+  font-size: 22px;
   width: 100%;
   position: absolute;
   bottom: 2%;
+
+  @media (min-width: 668px) {
+    font-size: 23px;
+  }
+
+    @media (min-width: 1024px) {
+      font-size: 35px;
+    }
 `;
 
 // Individual styling for Studio section
@@ -325,24 +429,32 @@ const ThumbnailWrapperContact = styled.div`
   text-align: center;
   height: 700px;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   margin-bottom: 20px;
   font-size: 24px;
   background-image: linear-gradient(#1c23255e, #1c23255e),
       url(${(props) => props.url});
+
 `;
 
 const InfoWrapperContact = styled.div`
     color: white;
     font-family: 'Fjalla One', sans-serif;
     position: absolute;
-    top: 20%;
-    left: 15%;
+    width: 50%;
+    top: 10%;
+    left: 10%;
     font-weight: bold;
     padding: 20px;
+
+    @media (min-width: 668px) {
+    width: 30%;
+    top: 15%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+    top: 20%;
+  }
 `;
 
 const InfoContact = styled.p`
@@ -350,4 +462,13 @@ const InfoContact = styled.p`
   font-size: 35px;
   border: 3px solid white;
   padding: 10px;
+
+
+  @media (min-width: 668px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 33px;
+  }
 `;

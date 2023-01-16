@@ -48,23 +48,42 @@ display: flex;
 const HeroContainer = styled.div`
 display: flex;
 position: relative;
-height: 50vh;
+height: 40vh;
 width: 100%;
+
+@media (min-width: 668px) {
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  height: 50vh;
+  width: 100%;    
+}
 `
 
 const Hero = styled.video`
-min-width: 100%;
-min-height: 50vh;
-position: fixed;
-top: 0;
-left: 0;
-z-index: -5;
+  min-width: 100vw;
+  min-height: 40vh; 
+  position: fixed;
+  top: 0;
+  z-index: -5;
+
+  @media (min-width: 668px) {
+    min-width: 100vw;
+    min-height: 50vh;
+  }
+
+  @media (min-width: 1024px) {
+    min-width: 100vw;
+    min-height: 60vh;
+  }
 `;
 
 const Headline = styled.div`
   box-sizing: border-box;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 33px;
+  font-size: 18px;
   color: antiquewhite;
   position: absolute;
   display: flex;
@@ -72,10 +91,21 @@ const Headline = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 80px;
+  padding: 20px;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.4);
+
+  @media (min-width: 668px) {
+    font-size: 33px;
+    padding: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 33px;
+    padding: 80px;
+  }
+
 `

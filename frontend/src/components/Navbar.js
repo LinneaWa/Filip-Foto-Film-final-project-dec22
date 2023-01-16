@@ -37,7 +37,7 @@ export const Navbar = () => {
           <Links to="/About"><span>Om mig</span></Links>
           </Dropdown>
           <Dropdown>
-          <Links to="/Studio"><span>Så funkar det</span></Links>
+          <Links to="/Process"><span>Så funkar det</span></Links>
           </Dropdown>
           <Dropdown>
           <Links to="/contact"><span>Kontakt</span></Links>
@@ -157,10 +157,20 @@ const Logo = styled.img`
   height: 60px;
 `
 const MenuContainer = styled.div`
-  display: flex;
+  display: none;
   width: 50vw;
   padding-right: 80px;
   justify-content: space-between;
+
+  @media (min-width: 668px) {
+    display: flex;
+    width: 70vw;
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 50vw;
+  }
 `
 
 const DropdownContent = styled.div`
@@ -190,11 +200,15 @@ const Dropdown = styled.div`
     display: block
   }
 
-  span{
-    @media (max-width: 700px) {
-    font-size: 18;
+  @media (min-width: 668px) {
+    font-size: 18px;
   }
+
+  @media (min-width: 1024px) {
+    font-size: 23px;
   }
+
+
 `
 const Links = styled(Link)`
   text-decoration: none;
@@ -207,6 +221,12 @@ const Links = styled(Link)`
 
 const RelativeDiv = styled.div`
  position: relative;
+ display: flex;
+
+ @media (min-width: 668px) {
+    display: none
+  }
+
 `
 
 const SideMenuContainer = styled.div`

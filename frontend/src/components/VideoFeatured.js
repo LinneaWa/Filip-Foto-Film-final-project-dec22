@@ -78,14 +78,18 @@ const FeaturedWrapper = styled.div`
 
 const FeaturedVideoCard = styled.div`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  &:nth-child(odd) { flex-direction: row; }
+
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    &:nth-child(odd) { flex-direction: row; }
+  }
 `;
 
 const ThumbnailWrapper = styled.div`
@@ -107,11 +111,20 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30vw;
+  width: 80vw;
   height: auto;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+
+
+  @media (min-width: 668px) {
+    
+  }
+
+  @media (min-width: 1024px) {
+    width: 30vw;
+  }
 `;
 
 const InfoHeader = styled.p`
@@ -121,6 +134,7 @@ const InfoHeader = styled.p`
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
+  margin-top: 5px;
 `;
 
 const Info = styled.p`

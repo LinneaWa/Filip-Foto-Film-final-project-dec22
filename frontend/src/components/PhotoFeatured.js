@@ -66,34 +66,52 @@ const FeaturedWrapper = styled.div`
 
 const FeaturedPhotoCard = styled.div`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  &:nth-child(odd) { flex-direction: row; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: 668px) {
+    flex-direction: row-reverse;
+    &:nth-child(odd) { flex-direction: row; }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    &:nth-child(odd) { flex-direction: row; }
+  }
 `;
 
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
-  height: 40vw;
-  width: 40vw;
+  border-radius: 5px;
+  height: 85vw;
+  width: 85vw;
   background-image: url(${(props) => props.url});
+
+  @media (min-width: 668px) {
+    height: 40vw;
+    width: 40vw;
+  }
 `;
 
 const InfoWrapper = styled.div`
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 80vw;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px;
   padding: 10px;
+
+  @media (min-width: 668px) {
+    width: 30vw;
+  }
 `;
 
 const InfoHeader = styled.p`
@@ -103,6 +121,7 @@ const InfoHeader = styled.p`
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
+  margin-top: 5px;
 `;
 
 const Info = styled.p`
@@ -110,4 +129,5 @@ const Info = styled.p`
   color: rgb(109, 123, 109);
   text-align: center;
   font-size: 20px;
+  
 `;
