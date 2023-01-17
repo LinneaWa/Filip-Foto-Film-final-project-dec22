@@ -1,9 +1,8 @@
 import React from 'react';
-import styled from 'styled-components/macro'
 import { OuterWrapper, InnerWrapper } from '../GlobalStyles';
-import { Link } from 'react-router-dom'
 import { Navbar } from 'components/Navbar';
 import { Header } from 'components/Header';
+import { Infopage } from 'components/InfoPage';
 
 export const About = () => {
   return (
@@ -12,13 +11,9 @@ export const About = () => {
     <Header tag={'headerAbout'} />
     <OuterWrapper>
     <InnerWrapper>
-
+      <Infopage tag={'aboutPage'}/>
     </InnerWrapper>
     </OuterWrapper>
     </>
   );
 }
-
-const ButtonLink = styled(Link)`
-width: 100%;
-`;
