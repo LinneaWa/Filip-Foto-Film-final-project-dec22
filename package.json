@@ -3,8 +3,5 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "npm install --prefix backend"
-  },
-  "dependencies": {
-    "react-lightbox-gallery": "^2.0.1"
   }
 }
