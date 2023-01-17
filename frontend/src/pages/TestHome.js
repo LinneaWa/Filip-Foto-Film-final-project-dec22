@@ -8,7 +8,7 @@ export const TestHome = () => {
     <>
     <Navbar />
     <Header>          
-        <Hero autoPlay muted loop playsinline className="hero-video">
+        <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeaderFoto_1.mp4' type="video/mp4"/>
         </Hero>
         <HeaderHeadline>

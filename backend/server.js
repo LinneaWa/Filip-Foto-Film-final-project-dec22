@@ -70,7 +70,9 @@ const Video = mongoose.model('Video', {
   title: String,
   text: String,
   link: String,
-  image: String,
+  poster: String,
+  video: String,
+  videoLowRes: String,
   tag: String
 })
 app.get('/videos', async (req, res) => {
