@@ -30,10 +30,12 @@ export const Header = ({ tag }) => {
       {videos.map((video) => {
         return (
           <HeroContainer key={video._id}>
-            <Hero autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
-              <source src={video['video']} type="video/mp4"/>
+            <HeroMobile autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
               <source src={video['videoLowRes']} type="video/mp4"/>
-            </Hero>
+            </HeroMobile>
+            <HeroDesktop autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
+              <source src={video['video']} type="video/mp4"/>
+            </HeroDesktop>
             <Headline><h1>{video['text']}</h1></Headline>
           </HeroContainer>
         );
@@ -63,7 +65,8 @@ width: 100%;
 }
 `
 
-const Hero = styled.video`
+const HeroDesktop = styled.video`
+  display: none;
   min-width: 100vw;
   min-height: 40vh; 
   position: fixed;
@@ -71,11 +74,33 @@ const Hero = styled.video`
   z-index: -5;
 
   @media (min-width: 668px) {
+    display: block;
     min-width: 100vw;
     min-height: 50vh;
   }
 
   @media (min-width: 1024px) {
+    display: block;
+    min-width: 100vw;
+    min-height: 60vh;
+  }
+`;
+const HeroMobile = styled.video`
+  display: block;
+  min-width: 100vw;
+  min-height: 40vh; 
+  position: fixed;
+  top: 0;
+  z-index: -5;
+
+  @media (min-width: 668px) {
+    display: none;
+    min-width: 100vw;
+    min-height: 50vh;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
     min-width: 100vw;
     min-height: 60vh;
   }
