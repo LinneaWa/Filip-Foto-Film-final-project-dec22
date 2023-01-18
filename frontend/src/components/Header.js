@@ -30,8 +30,9 @@ export const Header = ({ tag }) => {
       {videos.map((video) => {
         return (
           <HeroContainer key={video._id}>
-            <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
+            <Hero autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
               <source src={video['video']} type="video/mp4"/>
+              <source src={video['videoLowRes']} type="video/mp4"/>
             </Hero>
             <Headline><h1>{video['text']}</h1></Headline>
           </HeroContainer>
