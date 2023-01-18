@@ -26,11 +26,11 @@ export const Infopage = ({ tag }) => {
             return (
               <FeaturedPhotoCard
                 key={photo._id}>
-                <ThumbnailWrapper url={photo.image}></ThumbnailWrapper>
                 <InfoWrapper>
                   <InfoHeader>{photo['title']}</InfoHeader>
                   <Info>{photo['text']}</Info>
                 </InfoWrapper>
+                <ThumbnailWrapper url={photo.image}></ThumbnailWrapper>
               </FeaturedPhotoCard>
             );
           })}
@@ -75,8 +75,7 @@ const FeaturedPhotoCard = styled.div`
   padding-bottom: 10px;
 
   @media (min-width: 668px) {
-    flex-direction: row-reverse;
-    &:nth-child(odd) { flex-direction: row; }
+    flex-direction: column;
   }
 
   @media (min-width: 1024px) {
@@ -89,18 +88,19 @@ const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 5px;
-  height: 85vw;
-  width: 85vw;
+  height: 80vw;
+  width: 80vw;
   background-image: url(${(props) => props.url});
 
-  @media (min-width: 668px) {
-    height: 40vw;
-    width: 40vw;
+  @media (min-width: 1024px) {
+    height: 30vw;
+    width: 30vw;
   }
 `;
 
 const InfoWrapper = styled.div`
   background-color: whitesmoke;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -109,8 +109,8 @@ const InfoWrapper = styled.div`
   margin: 10px;
   padding: 10px;
 
-  @media (min-width: 668px) {
-    width: 30vw;
+  @media (min-width: 1024px) {
+    width: 40vw;
   }
 `;
 
@@ -128,6 +128,13 @@ const Info = styled.p`
   font-family: 'Montserrat', sans-serif;
   color: rgb(109, 123, 109);
   text-align: center;
-  font-size: 20px;
-  
+  font-size: 18px;
+
+  @media (min-width: 668px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
 `;

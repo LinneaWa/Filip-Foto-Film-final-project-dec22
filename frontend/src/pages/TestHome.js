@@ -8,9 +8,12 @@ export const TestHome = () => {
     <>
     <Navbar />
     <Header>          
-        <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
+        <HeroMobile autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeaderFoto_1.mp4' type="video/mp4"/>
-        </Hero>
+        </HeroMobile>
+        <HeroDesktop autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
+            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderFoto_1.mp4' type="video/mp4"/>
+        </HeroDesktop>
         <HeaderHeadline>
             <h1>Skapa säljande video och bilder.</h1><h1>Jag hjälper dig från start till mål.</h1>
         </HeaderHeadline>
@@ -116,7 +119,8 @@ const Header = styled.div`
   }
 `
 
-const Hero = styled.video`
+const HeroMobile = styled.video`
+  display: block;
   min-width: 100vw;
   min-height: 50vh;
   position: fixed;
@@ -125,11 +129,35 @@ const Hero = styled.video`
   z-index: -2;
 
   @media (min-width: 668px) {
+    display: none;
     min-width: 100vw;
     min-height: 60vh;
   }
 
   @media (min-width: 1024px) {
+    display: none;
+    min-width: 100vw;
+    min-height: 70vh;   
+  }
+`;
+
+const HeroDesktop = styled.video`
+  display: none;
+  min-width: 100vw;
+  min-height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+  @media (min-width: 668px) {
+    display: block;
+    min-width: 100vw;
+    min-height: 60vh;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
     min-width: 100vw;
     min-height: 70vh;   
   }
