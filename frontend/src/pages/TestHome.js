@@ -1,19 +1,24 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import { Navbar } from 'components/Navbar';
 
 export const TestHome = () => {
+
+  const isDesktop = useMediaQuery({query: '(min-width: 1024px)'})
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1023px)' })
+
   return (
     <>
     <Navbar />
     <Header>          
-        <HeroMobile autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
+        {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeaderFoto_1.mp4' type="video/mp4"/>
-        </HeroMobile>
-        <HeroDesktop autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
-            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderFoto_1.mp4' type="video/mp4"/>
-        </HeroDesktop>
+        </Hero>}
+        {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
+            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderEvent_1.mp4' type="video/mp4"/>
+        </Hero>}
         <HeaderHeadline>
             <h1>Skapa säljande video och bilder.</h1><h1>Jag hjälper dig från start till mål.</h1>
         </HeaderHeadline>
@@ -119,8 +124,7 @@ const Header = styled.div`
   }
 `
 
-const HeroMobile = styled.video`
-  display: block;
+const Hero = styled.video`
   min-width: 100vw;
   min-height: 50vh;
   position: fixed;
@@ -129,35 +133,11 @@ const HeroMobile = styled.video`
   z-index: -2;
 
   @media (min-width: 668px) {
-    display: none;
     min-width: 100vw;
     min-height: 60vh;
   }
 
   @media (min-width: 1024px) {
-    display: none;
-    min-width: 100vw;
-    min-height: 70vh;   
-  }
-`;
-
-const HeroDesktop = styled.video`
-  display: none;
-  min-width: 100vw;
-  min-height: 50vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -2;
-
-  @media (min-width: 668px) {
-    display: block;
-    min-width: 100vw;
-    min-height: 60vh;
-  }
-
-  @media (min-width: 1024px) {
-    display: block;
     min-width: 100vw;
     min-height: 70vh;   
   }
@@ -166,7 +146,7 @@ const HeroDesktop = styled.video`
 const HeaderHeadline = styled.div`
   box-sizing: border-box;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: antiquewhite;
   position: absolute;
   display: flex;
@@ -182,8 +162,12 @@ const HeaderHeadline = styled.div`
   right: 0;
   background: rgba(0, 0, 0, 0.4);
 
+  h1 {
+    margin: 5px;
+  }
+
   @media (min-width: 668px) {
-    font-size: 33px;
+    font-size: 22px;
     padding: 60px;
 
   }

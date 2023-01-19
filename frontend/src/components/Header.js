@@ -1,13 +1,15 @@
 // import { InnerWrapper, OuterWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive'
 import { VIDEO_URL } from 'utils/utils';
 
 export const Header = ({ tag }) => {
 
   const [videos, setVideos] = useState([]);
   // const [loading, setLoading] = useState(false);
-
+  const isDesktop = useMediaQuery({query: '(min-width: 1024px)'})
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1023px)' })
 
   const fetchVideos = () => {
     // setLoading(true);
@@ -30,12 +32,12 @@ export const Header = ({ tag }) => {
       {videos.map((video) => {
         return (
           <HeroContainer key={video._id}>
-            <HeroMobile autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
+            {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
               <source src={video['videoLowRes']} type="video/mp4"/>
-            </HeroMobile>
-            <HeroDesktop autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
+            </Hero>}
+            {isDesktop && <Hero autoPlay muted loop playsinline poster={video['poster']} className="hero-video">
               <source src={video['video']} type="video/mp4"/>
-            </HeroDesktop>
+            </Hero>}
             <Headline><h1>{video['text']}</h1></Headline>
           </HeroContainer>
         );
@@ -65,8 +67,7 @@ width: 100%;
 }
 `
 
-const HeroDesktop = styled.video`
-  display: none;
+const Hero = styled.video`
   min-width: 100vw;
   min-height: 40vh; 
   position: fixed;
@@ -74,33 +75,11 @@ const HeroDesktop = styled.video`
   z-index: -5;
 
   @media (min-width: 668px) {
-    display: block;
     min-width: 100vw;
     min-height: 50vh;
   }
 
   @media (min-width: 1024px) {
-    display: block;
-    min-width: 100vw;
-    min-height: 60vh;
-  }
-`;
-const HeroMobile = styled.video`
-  display: block;
-  min-width: 100vw;
-  min-height: 40vh; 
-  position: fixed;
-  top: 0;
-  z-index: -5;
-
-  @media (min-width: 668px) {
-    display: none;
-    min-width: 100vw;
-    min-height: 50vh;
-  }
-
-  @media (min-width: 1024px) {
-    display: none;
     min-width: 100vw;
     min-height: 60vh;
   }

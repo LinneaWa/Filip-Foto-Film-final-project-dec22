@@ -8,6 +8,7 @@ export const InnerWrapper = styled.div`
   width: 100%;
   max-width: 1400px;
   text-align: center;
+  background-color:  rgb(208, 215, 208);
 `;
 
 export const OuterWrapper = styled.div`

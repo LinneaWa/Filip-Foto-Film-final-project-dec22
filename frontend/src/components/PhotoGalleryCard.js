@@ -44,6 +44,7 @@ const Wrapper = styled.div`
   gap: 30px;
   margin-bottom: 50px;
   margin-top: 50px;
+  background-color:  rgb(208, 215, 208);
 
   @media (min-width: 668px) {
     grid-template-columns: 1fr 1fr;
