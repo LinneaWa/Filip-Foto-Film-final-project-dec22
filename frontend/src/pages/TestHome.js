@@ -13,11 +13,11 @@ export const TestHome = () => {
     <>
     <Navbar />
     <Header>          
-        {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
-            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeaderFoto_1.mp4' type="video/mp4"/>
+        {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg" className="hero-video">
+            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeroVideo.mp4' type="video/mp4"/>
         </Hero>}
         {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
-            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderEvent_1.mp4' type="video/mp4"/>
+            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderFoto_1.mp4' type="video/mp4"/>
         </Hero>}
         <HeaderHeadline>
             <h1>Skapa säljande video och bilder.</h1><h1>Jag hjälper dig från start till mål.</h1>
@@ -128,8 +128,8 @@ const Hero = styled.video`
   min-width: 100vw;
   min-height: 50vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -2;
 
   @media (min-width: 668px) {

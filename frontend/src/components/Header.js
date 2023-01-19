@@ -71,7 +71,8 @@ const Hero = styled.video`
   min-width: 100vw;
   min-height: 40vh; 
   position: fixed;
-  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -5;
 
   @media (min-width: 668px) {
