@@ -28,7 +28,7 @@ export const VideoGallery = ({ tag }) => {
             return (
               <Card key={video._id}>
                 <ThumbnailWrapper>                
-                    <Video autoPlay controls muted loop playsInline >
+                    <Video autoPlay controls muted loop poster={video['poster']} playsInline >
                         <source src={video['video']} type="video/mp4"/>
                     </Video>
                 </ThumbnailWrapper>

@@ -16,8 +16,8 @@ export const TestHome = () => {
         {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg" className="hero-video">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeroVideo.mp4' type="video/mp4"/>
         </Hero>}
-        {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/studioTest.jpeg" className="hero-video">
-            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/HeadersMobile/HeaderFoto_1.mp4' type="video/mp4"/>
+        {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg" className="hero-video">
+            <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeroVideo.mp4' type="video/mp4"/>
         </Hero>}
         <HeaderHeadline>
             <h1>Skapa säljande video och bilder.</h1><h1>Jag hjälper dig från start till mål.</h1>

@@ -32,7 +32,7 @@ export const VideoFeatured = ({ tag }) => {
                 key={video._id}
                 href={video.link}>
                 <ThumbnailWrapper>
-                  <Video autoPlay controls muted loop playsInline >
+                  <Video autoPlay controls muted loop poster={video['poster']} playsInline >
                     <source src={video['video']} type="video/mp4"/>
                   </Video>
                 </ThumbnailWrapper>
