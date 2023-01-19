@@ -89,7 +89,7 @@ const Hero = styled.video`
 const Headline = styled.div`
   box-sizing: border-box;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: antiquewhite;
   position: absolute;
   display: flex;
@@ -105,7 +105,7 @@ const Headline = styled.div`
   background: rgba(0, 0, 0, 0.4);
 
   @media (min-width: 668px) {
-    font-size: 33px;
+    font-size: 28px;
     padding: 60px;
   }
 
