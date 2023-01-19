@@ -13,10 +13,10 @@ export const TestHome = () => {
     <>
     <Navbar />
     <Header>          
-        {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg" className="hero-video">
+        {isDesktop && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeroVideo.mp4' type="video/mp4"/>
         </Hero>}
-        {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeaderFoto.jpg" className="hero-video">
+        {isTabletOrMobile && <Hero autoPlay muted loop playsinline poster="https://filippilthammar.se/FilipFotoFilm/Images/thumbnails/headerThumbnails/HeroVideo.jpg">
             <source src='https://filippilthammar.se/FilipFotoFilm/Videos/Headers/HeroVideo.mp4' type="video/mp4"/>
         </Hero>}
         <HeaderHeadline>
