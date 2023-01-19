@@ -39,7 +39,7 @@ export const Navbar = () => {
           <Links to="/Process"><span>Så funkar det</span></Links>
           </Dropdown>
           <Dropdown>
-          <Links to="/Contact"><span>Kontakt</span></Links>
+          <Links to="/Cgontact"><span>Kontakt</span></Links>
           </Dropdown>
       </MenuContainer>
       <MobileMenuContainer>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components/macro'
+import { Link } from 'react-router-dom'
 import { PHOTO_URL } from 'utils/utils';
 
 export const PhotoGalleryCard = ({ tag }) => {
@@ -26,7 +27,7 @@ export const PhotoGalleryCard = ({ tag }) => {
         return (
           <PhotoCard
             key={photo._id}
-                href={photo.link}>
+            to={photo.link}>
             <ThumbnailWrapper url={photo.image}>
               <ThumbnailTitle>{photo.title.toUpperCase()}</ThumbnailTitle>
             </ThumbnailWrapper>
@@ -57,7 +58,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const PhotoCard = styled.a`
+const PhotoCard = styled(Link)`
   transform: translateY(0%);
   transition: transform 0.5s;
   display: flex;
